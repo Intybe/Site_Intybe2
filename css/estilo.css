@@ -1,0 +1,1071 @@
+/* Estilo.css */
+/*Programação da tela, deixando sem borda*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Inclui padding e borda no tamanho total dos elementos */
+}
+/*Programação da tela*/
+
+/*Declaração de fontes externas*/
+@font-face {
+    font-family: 'AlbertSans';
+    src: url('/fontes/Albert_Sans/static/AlbertSans-Regular.ttf')format('truetype');
+}
+
+@font-face {
+    font-family: 'AlbertSansLight';
+    src: url('/fontes/Albert_Sans/static/AlbertSans-ExtraLight.ttf')format('truetype');
+}
+
+@font-face {
+    font-family: 'AlbertSansBold';
+    src: url('/fontes/Albert_Sans/static/AlbertSans-Bold.ttf')format('truetype');
+}
+
+@font-face {
+    font-family: 'RalewayBold';
+    src: url('/fontes/Raleway/static/Raleway-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'RalewayExtraBold';
+    src: url('/fontes/Raleway/static/Raleway-ExtraBold.ttf') format('truetype');
+}
+/*Fim da declaração de fontes*/
+
+/*Programação do body*/
+body {
+    background-color: #F8F8FF; 
+    font-family: 'AlbertSans';
+    margin: 0; 
+    overflow-x: hidden;
+}
+/*Fim da programação do body*/
+
+
+/*INICIO DA PROGRAMAÇÃO DA NAV*/
+#nav {
+    font-size: 18px; 
+    font-family: 'RalewayBold'; 
+    font-weight: 300; 
+    z-index: 1;
+}
+
+/* Imagem do logo principal */
+#logo {
+    width: 140px; /* Define a largura do logo */
+    height: auto; /* Define a altura do logo */
+    margin-top: 7px; 
+    margin-bottom: 6px; 
+}
+
+/* Oculta o ícone secundário em telas menores (para o ícone não aparecer no mobile) */
+#iconeS {
+    visibility: hidden;
+}
+
+/* Cada item de navegação (ajustes específicos para alinhamento) */
+.navbar-nav .nav-item {
+    margin-right: 20px; /* Espaçamento entre*/
+}
+
+
+.navbar-nav .nav-link {
+    color: #000000;
+}
+
+/* Ajustes no ícone de idioma */
+#icone {
+    width: 47px; 
+    height: 35px; 
+    margin-top: 13px; 
+    margin-bottom: 12px; 
+}
+
+#language-switcher {
+    display: flex; /* Exibe o ícone de troca de idioma em linha */
+    justify-content: center; /* Centraliza o ícone de troca de idioma */
+    margin-top: 0.5rem; /* Margem superior para espaçamento */
+}
+
+.navbar-brand, #navbarNav, #language-switcher {
+    text-align: center; /* Centraliza o conteúdo de cada seção na navbar */
+}
+
+/* Estilo para o dropdown de idiomas */
+#dropdown-content {
+    display: none; /* Oculto por padrão */
+}
+
+#dropdown-content.show {
+    display: block; /* Exibe o dropdown ao adicionar a classe 'show' */
+    position: absolute;
+    top: 100%; /* Posiciona logo abaixo do botão */
+    right: 0;
+    min-width: 150px;
+    background-color: white;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+
+/*INICIO DA PROGRAMAÇÃO DA TELA HOME*/
+
+/* Estilo geral da seção Home */
+.home {
+    min-height: 100vh; 
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-family: 'RalewayBold', sans-serif; /* Fonte personalizada */
+}
+.FraseDeEfeito{
+ justify-content: center;
+}
+
+/* Estilo dos títulos */
+#home h1[data-key="home_title"] {
+    font-size: 2.5rem; /* Tamanho da fonte ajustado */
+    color: #000000; /* Cor preta */
+}
+
+
+/* Estilo da palavra "Nossa" */
+#titulo1 h1 {
+    font-size: 2.5rem; /* Tamanho da fonte */
+    color: #000000; /* Cor preta */
+    font-weight: bold; /* Negrito */
+    margin: 0; /* Remove margem */
+}
+
+/* Estilo da palavra "Solução" com o degradê */
+#solucao {
+    background: linear-gradient(to left, #6200EA, #A452FF); /* Degradê roxo */
+    -webkit-background-clip: text; /* Efeito de clip no texto */
+    -webkit-text-fill-color: transparent; 
+    font-weight: bold; 
+    margin-left: 5px; /* Pequeno espaçamento entre "Nossa" e "Solução" */
+}
+
+
+.btn1{
+    border-radius: 60px;
+    width: 230px;
+    height: 50px;
+    margin-right: 26px;
+    font-size: 18px;
+    color: #FFFFFF;
+    font-family: 'RalewayBold';
+    background-color: #000000;
+    border: solid 2px;
+}
+
+
+
+.btn2{
+    border-radius: 60px;
+    width: 171.58px;
+    height: 49.12px;
+    font-size: 18px;
+    font-family: 'RalewayBold';
+    border: solid 2px;
+    background-color: #F8F8FF;
+}
+
+#imgHome {
+    max-width: 100%; 
+    height: 520px; 
+    width: auto;
+    margin-top: 10px;
+}
+
+/*FIM DA PROGRAMAÇÃO DA TELA HOME*/
+
+
+/*INICIO DA PROGRAMAÇÃO DA TELA QMSOMOS*/
+
+/*Programação da imagem da qmsomos nomeada como "img2"*/
+#imgQmSomos{
+    width: auto;
+    height: auto;
+    margin-left: 30px;
+    margin-right: 5px;
+    margin-top: 0px;
+    margin-bottom: 200px;
+}
+/*Fim da programação da img*/
+
+/*Programação do h1 qmsomos*/
+#tituloQuemSomos{
+    margin-top: 0px;
+    font-size: 40px;
+    font-family: 'RalewayBold';
+}
+/*Fim da programação do h1*/
+
+/*Programação dos paragrafos nomeados como class titulo2*/
+.textoQuemSomos{
+    font-size: 18px;
+    text-align: justify;
+    margin-top: 30px;
+}
+/*Fim da programação dos paragrafos*/
+
+.texto2_2{
+    font-size: 18px;
+    text-align: justify;
+    margin-top: 28px;
+}
+
+/*Programação da div de alinhamento dos icones e textos nomeada como "caixa"*/
+#caixa{
+    width: 605px;
+    height: 486px;
+}
+/*Fim da programação da div*/
+
+/*Programação da div de alinhamento dos icones e textos esquerdos nomeada como "caixa1"*/
+#caixa1{
+    margin-top: 40px;
+    margin-right: 37px;
+}
+/*Fim da programação da div*/
+
+/*Programação da div de alinhamento dos icones e textos direitos nomeada como "caixa2"*/
+#caixa2{
+    margin-top: 40px;
+    margin-left: 47px;
+}
+/*Fim da programação da div*/
+
+/*Programação da div de alinhamento dos icones e textos inferiores nomeada como "caixa4"*/
+.caixa4{
+    margin-top: 25px;
+}
+/*Fim da programação da div*/
+
+/*programação dos icones*/
+.icon1{
+    width: 30px;
+    height: 30px;
+}
+/*Fim da programação dos icones*/
+
+/*Programação das palavras dos icones*/
+.p1{
+    margin-left: 11px;
+    line-height: 2;
+}
+/*Fim da programação das palavras*/
+
+/*Programação da linha entre os icones*/
+#linha1{
+    margin-left: 0px;
+    margin-right: 0px;
+    height:90px;
+    margin-top: 40px;
+    border: 1px solid #1D40D6;
+}
+/*Fim da programação da linha */
+
+/*FIM DA PROGRAMAÇÃO DA TELA DE QMSOMOS*/
+
+/*INICIO DA PROGRAMAÇÃO DA TELA DE CLIENTES*/
+/*Programação do titulo*/
+#tituloClientes{
+    text-align: center;
+    margin-bottom: 90px;
+    font-family: 'RalewayBold';
+}
+/*Fim da programação do titulo*/
+
+/* Programação da div que contem o carrossel de clientes */
+.clientes-carrossel-container {
+    position: relative;
+    width: 1300px;
+    margin: auto;
+    overflow-x: hidden; 
+    height: 370px;
+    margin-bottom: 100px;
+    padding: 0 40px;
+}
+/*Fim da programação da div*/
+
+/*Programação da div que contem os cards do carrossel*/
+.clientes-carrossel {
+    display: flex;
+    flex-wrap: nowrap; 
+    white-space: nowrap; 
+    transition: transform 0.5s ease-in-out;
+}
+/*Fim da programação da div*/
+
+/*Programação dos cards dos clientes*/
+.cliente-card {
+    width: 530px;
+    height: 347px;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.2);
+    margin-right: 40px;
+    text-align: center;
+    flex-shrink: 0;
+    border-radius: 30px;
+}
+/*Fim da programação dos cards*/
+
+/*Programção do h3 dos cards*/
+.cliente-card h3{
+    font-family: 'RalewayBold';
+}
+/*Fim da programação do h3*/
+
+/*Programação da div de alinhamento de logos, titulos e subtitulos dos cards*/
+.logoC{
+    display: flex;
+    margin-top: 20px;
+}
+/*Fim da programação da div*/
+
+/*Programação da div de alinhamento de titulo e subtitulo dos cards*/
+.textoC{
+    margin-left: 18px;
+}
+/*Fim da programação da div*/
+
+/*Programação da div de alinhamento da linha e dos textos dos cards*/
+.textoT{
+    display: flex;
+    margin-top: 25px;
+    margin-left: 5px;
+    margin-right: 20px;
+}
+/*Fim da programação da div*/
+
+/*Programação da linha dos cards*/
+.linha2{
+    height:140px ;
+    border: 1px solid  #9759FF; 
+    margin-right: 20px;
+    margin-left: 20px;
+}
+/*Fim da programação da linha*/
+
+/*Programação das logos dos cards*/
+.cliente-logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+/*Fim da programação das logos*/
+
+/*Programação do subtitulo*/
+.subtitulo {
+    color: #777;
+    margin-bottom: 15px;
+    font-family: 'AlbertSansLight';
+}
+/*Fim da programação do subtitulo*/
+
+/*Programação do texto*/
+.Texto {
+    text-align: justify;
+    color: #333;
+    line-height: 1.5;
+    white-space: normal; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    font-size: 20px;
+}
+/*Fim da programação do texto*/
+
+/* Programaçao da div de alinhamento dos botões */
+.CardBtn{
+    display: flex;
+}
+/*Fim da programação da div*/
+
+/*Programação do botão de anterior*/
+#prevBtn { 
+    margin-bottom: 150px;
+    background-color: transparent;
+    border: none; 
+    padding: 0; 
+    cursor: pointer; 
+}
+/*Fim da programação do botão*/
+
+/*Programação do botão de proximo*/
+#nextBtn {
+    margin-bottom: 150px;
+    background-color: transparent; 
+    border: none; 
+    padding: 0; 
+    cursor: pointer; 
+}
+/*Fim da programação do botão*/
+/*FIM DA PROGRAMAÇÃO DA TELA CLIENTES*/
+
+/*INICIO DA PROGRAMAÇÃO DA TELA DE VANTAGENS*/
+/*Programação da div de alinhamento*/
+#alinhamento{
+    display: flex;
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+/*Fim da programação da div*/
+
+/*Programação da primeira div*/
+#D1{
+    width:400px ;
+    height:596px ;
+    background-color: #FFFFFF;
+    border-radius: 30px;
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.2);
+    margin-left: 75px;
+}
+/*Fim da programação da div*/
+
+/*Programação da segunda div*/
+#D2{
+    width:500px ;
+    height:281px ;
+    background-color: #FFFFFF;
+    border-radius: 30px;
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.2);
+    margin-left: 30px;
+
+}
+/*Fim da programação da div*/
+
+/*Programação da terceira div*/
+#D3{
+    width:500px ;
+    height:281px ;
+    background-color: #FFFFFF;
+    border-radius: 30px;
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.2);
+    margin-left: 30px;
+    margin-top: 34px;
+
+
+}
+/*Fim da programação da div*/
+
+/*Programação da quarta div*/
+#D4{
+    width:400px ;
+    height:596px ;
+    background-color: #FFFFFF;
+    border-radius: 30px;
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.2);
+    margin-left: 30px;
+}
+/*Fim da programação da div*/
+
+/*Programação da div que contem todo o conteudo*/
+.vantagens{
+    padding-top: 30px;
+    margin-left: 50px;
+    margin-bottom: 15px;
+    font-size: 48px;
+    font-family: 'RalewayBold';
+    
+}
+/*Fim da programação da div*/
+
+.vantagens2{
+    visibility: hidden;
+} 
+
+.vantagens3{
+    visibility: hidden;
+}
+
+/*Programação dos textos das divs de vantagens*/
+.vantagens1{
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: justify;
+}
+/*Fim da programação dos textos*/
+
+
+/*Programação da imagem do processador nomeada como "img3"*/
+#img3{
+    padding-top: 120.05px;
+    height:  279.54px;
+    width: 279.96px;
+    transform: rotate(0.76deg);
+    margin-left: 60px;
+    margin-right: 76.94px;
+    margin-bottom: 41.72px;
+}
+/*Fim da programação da imagem*/
+
+/*Programação da imagem do computador nomeada como "img4"*/
+#img4{
+    padding-top: 120.05px;
+    height:273.44px;
+    width:286.12px;
+    transform: rotate(5.27deg);
+    margin-left: 60px;
+    padding-top: 21.71px;
+    margin-right: 60.97px;
+    margin-bottom: 39.43px;
+}
+/*Fim da programação da imagem*/
+/*FIM DA PROGRAMAÇÃO DA TELA DE VANTAGENS*/
+
+/*INICIO DA PROGRAMAÇÃO DA TELA DA EQUIPE*/
+
+/*Programação do titulo*/
+#textoE{
+    text-align: center;
+    margin-bottom: 90px;
+    font-family: 'RalewayBold';
+}
+/*Fim da programação do titulo*/
+
+/* Programação da div que contem o carrossel da equipe */
+.equipe-carrossel-container {
+    position: relative;
+    width: 1300px;
+    margin: auto;
+    overflow-x: hidden; 
+    height: 430px;
+    margin-bottom: 200px;
+    padding: 0 40px;
+}
+/*Fim da programação da div*/
+
+/*Programação da div que contem os cards do carrossel*/
+.equipe-carrossel {
+    display: flex;
+    flex-wrap: nowrap; 
+    white-space: nowrap; 
+    transition: transform 0.5s ease-in-out;
+}
+/*Fim da programação da div*/
+
+/*Programação dos cards da equipe*/
+.equipe-card {
+    width: 260px;
+    height: 400px;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.2);
+    margin-right: 40px;
+    text-align: center;
+    flex-shrink: 0;
+}
+/*Fim da programação dos cards*/
+
+/*Programação do h3 dos cards*/
+.equipe-card h3{
+    font-family: 'RalewayBold';
+}
+/*Fim da programação do h3*/
+
+/*Programação das fotos dos cards*/
+.foto{
+    width: 180px;
+    margin-top: 5px;
+    margin-bottom: 22px;
+}
+/*Fim da programação das fotos*/
+
+/*Programação do subtitulo com os cargos*/
+.cargo {
+    color: #777;
+    margin-top: 10px;
+}
+/*Fim da programação dos subtitulos*/
+
+/*Programação do botão dos cards*/
+.btnEquipe{
+    width: 103px;
+    height: 37px;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-family: 'RalewayBold';
+    background: linear-gradient(  to left, #6200EA,  #A452FF); 
+    border-radius: 60.5px;  
+    border: none; 
+    margin-top: 23px;
+    margin-bottom: 40px;
+    font-family: 'RalewayExtraBold';
+}
+/*Fim da programação dos botões*/
+
+/*Programação da div com os botões*/
+.CardBtn2{
+    display: flex;
+}
+/*Fim da programação da div*/
+
+/*Programação do botão de anterior*/
+#prevBtn2 { 
+    margin-bottom: 200px;
+    background-color: transparent; 
+    border: none; 
+    padding: 0; 
+    cursor: pointer; 
+}
+/*Fim da programação do botão*/
+
+/*Programação do botão de proximo*/
+#nextBtn2 {
+    margin-bottom: 200px;
+    background-color: transparent; 
+    border: none; 
+    padding: 0; 
+    cursor: pointer; 
+}
+/*Fim da programação do botão*/
+/*FIM DA PROGRAMAÇÃO DA TELA DA EQUIPE*/
+
+/*INICIO DA PROGRAMAÇÃO DA TELA DE ORÇAMENTO*/
+/*Programação da div q contem o conteudo*/
+#orçamento{
+    margin-bottom: 100px;
+}
+/*Fim da programação da div*/
+
+/*Programação do titulo*/
+#tituloO{
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: 'RalewayBold';
+}
+/*Fim da programação do titulo*/
+
+/*Programação da div com os contatos*/
+#contato{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px 10%;
+}
+/*Fim da programação da div*/
+
+/*Programação da div com as informações da empresa*/
+.info {
+    flex: 1;
+    width: 361.2px;
+    height: 550px;
+    margin-left: 200px;
+    margin-right: 145.8px;
+    margin-top: 30px;
+}
+/*Fim da programação da div*/
+
+/*Programação da h2 da info*/
+.info h2 {
+    color: #5500ff;
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-family: 'AlbertSansBold';
+}
+/*Fim da programação do h2*/
+
+/*Programação do h3 da info*/
+.info h3 {
+    font-family: 'AlbertSansBold';
+}
+/*Fim da programação do h3*/
+
+/*Programação do p da info*/
+.info p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+/*Fim da programação do p*/
+
+/*Programação da div com os itens (icones e textos)*/
+.item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+/*Fim da programação da div*/
+
+/*Programação do container dos icones*/
+.icon-container {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+}
+/*Fim da programação do container*/
+
+/*Programação dos icones*/
+.icon {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    background-color: #5500ff;
+    padding: 10px;
+}
+/*Fim da programação dos icones*/
+
+/*Programação do h3 do container de textos*/
+.texto-container h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #5500ff;
+}
+/*Fim da programação do container*/
+
+/*Programação do p do container de textos*/
+.texto-container p {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+}
+/*Fim da programação do container*/
+
+/*Programação da linha*/
+#linha3 {
+    border: 0;
+    height: 1px;
+    background-color: #ddd;
+    margin: 20px 0;
+    width: 361.2px;
+}
+/*Fim da programação da linha*/
+
+/*Programação da div de redes sociais*/
+.redes-sociais {
+    margin-top: 20px;
+}
+/*Fim da programação da div*/
+
+/*Programação do p de redes sociais*/
+.redes-sociais p {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: 'RalewayExtraBold';
+}
+/*Fim da programação do p*/
+
+/*Programação da div de icones de redes sociais*/
+.icons {
+    display: flex;
+    gap: 10px;
+}
+/*Fim da programação da div*/
+
+/*Programação de icones de redes sociais*/
+.social-icon {
+    width: 40px;
+    height: 40px;
+}
+/*Fim da programação da icones*/
+
+/*Programação do icone do Linkedin*/
+.social-icon-l {
+    width: 63px;
+    height: 63px;
+    margin-bottom: 0px;
+}
+/*Fim da programação do icone*/
+
+/*Programação da div que contem o formulario*/
+#divO{
+    width:445px ;
+    height: 654px;
+    background-color: #FFFFFF;
+    border-radius: 40px;
+    margin-right: 200px;
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.2);
+}
+/*Fim da programação da div*/
+
+/*Programação do titulo do formulario*/
+#tO{
+    text-align: center;
+    margin-top: 30px;
+    margin-right: 145px;
+    margin-left: 170px;
+    font-family: 'RalewayBold';
+}
+/*Fim da programação do titulo*/
+
+/*Programagão da div com o input e label*/
+.input-form{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    position: relative;
+    margin-left: 45px;
+}
+/*Fim da programação da div*/
+
+/*Programação da label*/
+.input-form label{
+    font-size: 18px;
+    position: absolute;
+    left: 0%;
+    bottom: 5px;
+    color: #4E4E4E;
+    cursor: text;
+    transition: 0.3s ease-in-out;
+}
+/*Fim da programação da label*/
+
+/*Programação do input*/
+.input-form .input{
+    width: 100%;
+    padding: 5px;
+    color:#000 ;
+    border: 0;
+    border-bottom: 2px solid #4E4E4E;
+    outline: 0; /*borda de fora - quando clica*/
+    font-size: 18px;
+}
+/*Fim da programação do input*/
+
+/*Programação dos efeitos ao clicar*/
+.input-form .input:focus,
+.input-form .input:valid{
+    border-bottom: 2px solid #000000;
+}
+
+.input-form .input:focus + label,
+.input-form .input:valid + label{
+    transform: translateY(-24px);
+    font-size: 16px;
+    color: #000;
+
+}
+/*Fim da programação dos efeitos*/
+
+/*Programação da div com o input e label da descrição*/
+#input-form2{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    margin-left: 45px;
+    margin-top:40px ;
+}
+/*Fim da programação da div*/
+
+/*Programação da label da descrição*/
+#desc{
+    color:#4E4E4E ;
+}
+/*Fim da programação da label*/
+
+/*Programação do input de descrição*/
+#descricao{
+    margin-top: 5px;
+    border-radius: 20px;
+    resize: none;
+    box-sizing: border-box;
+    border: 2px solid #000;
+    width: 350px;
+    height: 121px;
+}
+/*Fim da programação do input*/
+
+/*Programação do botão*/
+#enviar{
+    width: 227.25px;
+    height: 49px;
+    font-size: 18px;
+    color: #FFFFFF;
+    font-family: 'RalewayBold';
+    background-color: #000000;
+    border: solid 2px;
+    border-radius: 60px;
+    margin-top: 44.97px;
+    margin-left: 121px;
+}
+/*Fim da programação do botão*/
+/*FIM DA PROGRAMAÇÃO DA TELA DE ORÇAMENTO*/
+
+/*INICIO DA PROGRAMAÇÃO DO FOOTER*/
+
+/*Programação da div com todo o conteudo*/
+#footer{
+    background-color:#EEEEF5;
+    width: 100%;
+    height: 350px;
+    border-radius: 30px;
+}
+/*Fim da programação da div*/
+
+/*Programação da div com as informações*/
+.footer-container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1000px;
+    text-align: center;
+}
+/*Fim da programação da div*/
+
+/*Programação da div com os icones de redes sociais e logo*/
+.footer-logo-social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+/*Fim da programação da div*/
+
+/*Programação da logo*/
+.footer-logo {
+    height: 60px;
+    margin-right: 22px;
+    margin-left: 300px;
+    margin-top: 58px;
+}
+/*Fim da programação da logo*/
+
+/*Programação da linha4*/
+#linha4{
+    margin-left: 0px;
+    margin-right: 0px;
+    height:60px;
+    margin-top: 40.09px;
+    border: solid 1px;
+    margin-top: 58px;
+}
+/*Fim da programação da linha*/
+
+/*Programação da div com botões de icones de redes sociai*/
+.social-buttons {
+    display: flex;
+    gap: 15px;
+    margin-left: 22px;
+    margin-right: 765px;
+    margin-top: 58px;
+}
+/*Fim da programação da div*/
+
+/*Programação dos botões*/
+.social-button {
+    background-color: transparent; 
+    border: none; 
+    padding: 0;
+    cursor: pointer; 
+}
+/*Fim da programação dos botões*/
+
+/*Programação dos icones*/
+.social-icon {
+    width: 53px;
+    height: 53px;
+    margin-top: 5px;
+}
+/*Fim da programação dos icones*/
+
+/*Programação do icone do Linkedin*/
+.linkedin{
+    width: 63px;
+    height: 63px;
+    margin-bottom: 0px;
+}
+/*Fim da programação do icone
+
+/*Programação da div com o endereço*/
+.endereco  {
+    margin-bottom: 30px;
+}
+/*Fim da programação da div*/
+
+/*Programação do titulo do endereço*/
+#titulof{
+    font-size: 18px;
+    margin-bottom: 30px;
+    font-family: 'AlbertSansBold';
+}
+/*Fim da programação do titulo*/
+
+/*Programação do p do endereço*/
+.endereco p {
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+/*Fim da programação do p*/
+
+/*Programação com a div do texto de baixo*/
+.fim {
+    margin-top: 20px;
+    font-size: 14px;
+    margin-bottom: 78px;
+}
+/*Fim da programação da div*/
+
+/*Programação do p do fim*/
+.fim p {
+    margin: auto;
+}
+/*Fim da programação do p*/
+
+/*Programação do a do fim*/
+.fim a {
+    color: #333;
+    text-decoration: none;
+}
+/*Fim da programação do a*/
+
+/*Programação do a do fim ao passar o cursor*/
+.fim a:hover {
+    text-decoration: underline;
+}
+/*Fim da programação do a*/
+
+/*Programação da linha5*/
+#linha5{
+    width: 19.51px;
+    margin-left: 490px;
+    border: solid 2px;
+}
+/*Fim da programação da linha*/
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content button {
+    color: black;
+    padding: 12px 16px;
+    text-align: left;
+    border: none;
+    background: none;
+    width: 100%;
+}
+
+.dropdown-content button:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown.show .dropdown-content {
+    display: block;
+}
+
+#icone{
+    background: transparent;
+    border: none;
+}
+
