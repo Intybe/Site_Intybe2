@@ -114,29 +114,31 @@ body {
 
 /* Estilo geral da seção Home */
 .home {
-    min-height: 100vh; 
-    padding-top: 50px;
-    padding-bottom: 50px;
     font-family: 'RalewayBold', sans-serif; /* Fonte personalizada */
+    margin-top: 90px;
+    justify-content: center;
 }
 .FraseDeEfeito{
- justify-content: center;
+  margin-top: 30px;
 }
 
 /* Estilo dos títulos */
 #home h1[data-key="home_title"] {
-    font-size: 2.5rem; /* Tamanho da fonte ajustado */
+    font-size: 40px; 
     color: #000000; /* Cor preta */
+    margin-bottom: 0;
 }
 
 
 /* Estilo da palavra "Nossa" */
 #titulo1 h1 {
-    font-size: 2.5rem; /* Tamanho da fonte */
+    font-size: 40px; /* Tamanho da fonte */
     color: #000000; /* Cor preta */
     font-weight: bold; /* Negrito */
     margin: 0; /* Remove margem */
 }
+
+
 
 /* Estilo da palavra "Solução" com o degradê */
 #solucao {
@@ -158,18 +160,21 @@ body {
     font-family: 'RalewayBold';
     background-color: #000000;
     border: solid 2px;
+    text-decoration: none;
 }
 
 
 
 .btn2{
     border-radius: 60px;
-    width: 171.58px;
-    height: 49.12px;
+    width: 172px;
+    height: 50px;
     font-size: 18px;
     font-family: 'RalewayBold';
-    border: solid 2px;
-    background-color: #F8F8FF;
+    color: #000;
+    border: 2px solid #000;
+    background-color: transparent;
+    text-decoration: none;
 }
 
 #imgHome {
@@ -266,30 +271,30 @@ body {
     margin-top: 40px;
     border: 1px solid #1D40D6;
 }
-/*Fim da programação da linha */
-
 /*FIM DA PROGRAMAÇÃO DA TELA DE QMSOMOS*/
 
 /*INICIO DA PROGRAMAÇÃO DA TELA DE CLIENTES*/
 /*Programação do titulo*/
+
 #tituloClientes{
     text-align: center;
     margin-bottom: 90px;
     font-family: 'RalewayBold';
 }
-/*Fim da programação do titulo*/
+
 
 /* Programação da div que contem o carrossel de clientes */
 .clientes-carrossel-container {
     position: relative;
-    width: 1300px;
+    width: 90%;
+    height: 100%;
     margin: auto;
     overflow-x: hidden; 
     height: 370px;
     margin-bottom: 100px;
     padding: 0 40px;
 }
-/*Fim da programação da div*/
+
 
 /*Programação da div que contem os cards do carrossel*/
 .clientes-carrossel {
@@ -298,80 +303,84 @@ body {
     white-space: nowrap; 
     transition: transform 0.5s ease-in-out;
 }
-/*Fim da programação da div*/
+
 
 /*Programação dos cards dos clientes*/
 .cliente-card {
     width: 530px;
     height: 347px;
-    box-sizing: border-box;
+    margin-right: 40px;
     padding: 20px;
+    box-sizing: border-box;
     background-color: white;
     border-radius: 15px;
-    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.2);
-    margin-right: 40px;
+    box-shadow: 5px 10px 20px    rgba(0, 0, 0, 0.2);
     text-align: center;
     flex-shrink: 0;
     border-radius: 30px;
 }
-/*Fim da programação dos cards*/
+
 
 /*Programção do h3 dos cards*/
 .cliente-card h3{
     font-family: 'RalewayBold';
 }
-/*Fim da programação do h3*/
+
 
 /*Programação da div de alinhamento de logos, titulos e subtitulos dos cards*/
-.logoC{
-    display: flex;
+.CabecalhoCard {
     margin-top: 20px;
+    margin-left: 10px;
 }
-/*Fim da programação da div*/
+
+.CabecalhoCard img {  
+    padding: 130; /* Espaço para a borda interna */
+    background-color: #fff; /* Cor de fundo para criar a borda interna */
+    width: 70px;
+    height: 70px;
+    border-radius: 50%; /* Arredonda a imagem */
+    
+    /* Cria o gradiente ao redor da imagem */
+    border: 1px solid transparent;
+    background-image: linear-gradient(#fff, #fff), linear-gradient(to right, #8A2BE2, #1E90FF);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+
 
 /*Programação da div de alinhamento de titulo e subtitulo dos cards*/
-.textoC{
-    margin-left: 18px;
+.textoC h3{
+    font-size: 22px;
+    margin-bottom: 0;
 }
-/*Fim da programação da div*/
-
-/*Programação da div de alinhamento da linha e dos textos dos cards*/
-.textoT{
-    display: flex;
-    margin-top: 25px;
-    margin-left: 5px;
-    margin-right: 20px;
-}
-/*Fim da programação da div*/
-
-/*Programação da linha dos cards*/
-.linha2{
-    height:140px ;
-    border: 1px solid  #9759FF; 
-    margin-right: 20px;
-    margin-left: 20px;
-}
-/*Fim da programação da linha*/
-
-/*Programação das logos dos cards*/
-.cliente-logo {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    margin-bottom: 10px;
-}
-/*Fim da programação das logos*/
 
 /*Programação do subtitulo*/
-.subtitulo {
+.textoC .subtitulo {
     color: #777;
-    margin-bottom: 15px;
     font-family: 'AlbertSansLight';
+    font-size: 18px;
 }
-/*Fim da programação do subtitulo*/
+
+/*Programação da div de alinhamento da linha e dos textos dos cards*/
+.CorpoCard{
+    margin-top: 5px;
+    width: 90%;
+}
+
+/*Programação da linha dos cards*/
+.CorpoCard hr{
+    border: none; /*  borda padrão */
+    border-radius: 50px;
+    height: 150px; 
+    width: 15px; /* Define a largura da linha */
+    margin-left: 20px;
+    background: linear-gradient(to right, #8A2BE2, #1E90FF); /* Gradiente vertical */
+}
+
 
 /*Programação do texto*/
-.Texto {
+.CorpoCard .Texto {
     text-align: justify;
     color: #333;
     line-height: 1.5;
@@ -379,14 +388,16 @@ body {
     overflow: hidden;
     text-overflow: ellipsis; 
     font-size: 20px;
+    margin-left: 10px;
 }
-/*Fim da programação do texto*/
 
 /* Programaçao da div de alinhamento dos botões */
 .CardBtn{
-    display: flex;
+    width: 90%;
+    height: auto;
+    justify-content: center;
+    margin-left: 50px;
 }
-/*Fim da programação da div*/
 
 /*Programação do botão de anterior*/
 #prevBtn { 
@@ -396,7 +407,6 @@ body {
     padding: 0; 
     cursor: pointer; 
 }
-/*Fim da programação do botão*/
 
 /*Programação do botão de proximo*/
 #nextBtn {
@@ -406,8 +416,10 @@ body {
     padding: 0; 
     cursor: pointer; 
 }
-/*Fim da programação do botão*/
 /*FIM DA PROGRAMAÇÃO DA TELA CLIENTES*/
+
+
+
 
 /*INICIO DA PROGRAMAÇÃO DA TELA DE VANTAGENS*/
 /*Programação da div de alinhamento*/
