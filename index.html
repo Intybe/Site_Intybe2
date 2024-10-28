@@ -51,7 +51,7 @@
         
         <!-- HOME -->
            <!-- Seção Home com Flexbox e alinhamento centralizado -->
-    <section class="home d-flex flex-column flex-lg-row py-2">
+    <section class="home d-flex justify-content-center  flex-lg-row py-2">
         <!-- Div com os títulos e botões -->
         <div id="home" class="text-center text-lg-start ">
             <div class="FraseDeEfeito">
@@ -124,10 +124,8 @@
 
                             <!--CARDS -->
                             <div class="cliente-card  p-2 bg-white  mx-2 ">
-                                <div class="CabecalhoCard d-flex align-items-center mb-3">
-                                    <div class="imgBorda align-items-center mb-2">
-                                    <img src="img/logo1.png" alt="Logo 1" class="cliente-logo me-2">
-                                    </div>
+                                <div class="CabecalhoCard d-flex align-items-center mb-3">  
+                                    <img src="img/logo1.png" alt="Logo 1" class="cliente-logo me-2">                             
                                     <div class="textoC text-start">  
                                         <h3>Alliance</h3>
                                         <p class="subtitulo" data-key="sub1">Joalheria</p>
@@ -234,8 +232,8 @@
     <!-- VANTAGENS -->
 
     <section class="vantagens d-flex flex-column align-items-center justify-content-center">
-        <div id="alinhamento" class="container">
-            <div class="row">
+       
+            <div class="row justify-content-center">
 
                 <div class="col-lg-3 mb-4">
                     <div id="D1" class="p-4">
@@ -245,9 +243,8 @@
                     </div>
                 </div>
     
-                <div class="col-lg-6 mb-4">
-                    <div id="d23">
-                        <div id="D2" class="p-4 mb-3">
+                <div class="col-lg-4 mb-3">
+                        <div id="D2" class="p-4">
                             <h1 class="vantagens" data-key="vt2">Atendimento <br> Qualificado</h1>
                             <p class="vantagens1" data-key="vs2">Atendimento de excelência, validando a opinião do cliente, com comunicação transparente e confiável.</p>
                         </div>
@@ -256,7 +253,6 @@
                             <h1 class="vantagens" data-key="vt3">Suporte <br> Contínuo</h1>
                             <p class="vantagens1" data-key="vs3">Manutenção contínua, permitindo o funcionamento correto e a atualização caso necessário.</p>
                         </div>
-                    </div>
                 </div>
     
                 <div class="col-lg-3 mb-4">
@@ -267,19 +263,72 @@
                     </div>
                 </div>
             </div>
-        </div>
+     
     </section>
     
+<!-- EQUIPE-->
+
+<div id="equipe" class="container">
+    <h1 id="textoE" data-key="tE">Equipe Técnica</h1>
+    <div class="d-flex align-items-center justify-content-center mb-5">
+        <button id="prevBtn2" class="me-3">
+            <img src="img/prev.png" alt="Anterior">
+        </button>
+        <div class="equipe-carrossel-container justify-content-center align-items-center ">
+            <div class="equipe-carrossel d-flex">
+                <div class="equipe-card">
+                    <img src="img/Evelyn.png" alt="foto" class="foto img-fluid"> 
+                    <h3>Evelyn Gonçalves</h3>
+                    <p class="cargo" data-key="c1">Analista de Dados</p>
+                    <a href="https://www.linkedin.com/in/evelyn-karina-de-jesus-gon%C3%A7alves-3b0a592a1/">
+                        <button class="btnEquipe">LinkedIn</button>
+                    </a>
+                </div>
+
+                <div class="equipe-card">
+                    <img src="img/Flavia.png" alt="foto" class="foto img-fluid "> 
+                    <h3>Flavia Morgado</h3>
+                    <p class="cargo" data-key="c2">Analista de Infraestrutura</p>
+                    <a href="https://www.linkedin.com/in/flavia-amaral-muniz-morgado-1651512a3/">
+                        <button class="btnEquipe">LinkedIn</button>
+                    </a>
+                </div>
+
+                <div class="equipe-card">
+                    <img src="img/Marcos.png" alt="foto" class="foto img-fluid"> 
+                    <h3>Marcos Freire</h3>
+                    <p class="cargo" data-key="c3">Desenvolvedor Backend</p>
+                    <a href="https://www.linkedin.com/in/marcoss-freire/">
+                        <button class="btnEquipe">LinkedIn</button>
+                    </a>
+                </div>
+
+                <div class="equipe-card justify-content-center align-items-center">
+                    <img src="img/Maria.png" alt="foto" class="foto img-fluid"> 
+                    <h3 class="fw-bold">Maria Lima</h3>
+                    <p class="cargo" data-key="c4">Desenvolvedora Frontend</p>
+                    <a href="https://www.linkedin.com/in/maria-clara-souza-de-lima-2674462a2/">
+                        <button class="btnEquipe">LinkedIn</button>
+                    </a>
+                </div>
+
+                <div class="equipe-card">
+                    <img src="img/Rebeka.png" alt="foto" class="foto img-fluid"> 
+                    <h3>Rebeka Amorim</h3>
+                    <p class="cargo" data-key="c5">Desenvolvedora Mobile</p>
+                    <a href="https://www.linkedin.com/in/rebeka-lima-amorim-21873b270/">
+                        <button class="btnEquipe">LinkedIn</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <button id="nextBtn2" class="ms-3">
+            <img src="img/next.png" alt="Próximo">
+        </button>
+    </div>
+</div>
 
 
-
-
-
-
-
-
-               
-      
 
         <script src="script.js"></script>    
 </body>

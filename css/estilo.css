@@ -115,8 +115,8 @@ body {
 /* Estilo geral da seção Home */
 .home {
     font-family: 'RalewayBold', sans-serif; /* Fonte personalizada */
-    margin-top: 90px;
-    justify-content: center;
+
+    
 }
 .FraseDeEfeito{
   margin-top: 150px;
@@ -333,19 +333,25 @@ body {
     margin-left: 10px;
 }
 
-.CabecalhoCard img {  
-    padding: 130; /* Espaço para a borda interna */
-    background-color: #fff; /* Cor de fundo para criar a borda interna */
-    width: 70px;
-    height: 70px;
-    border-radius: 50%; /* Arredonda a imagem */
+    .CabecalhoCard img {
+        padding: 5px; /* Espaço entre a imagem e a borda branca */
+        background-color: #fff; /* Fundo branco para criar a borda interna */
+        width: 70px;
+        height: 70px;
+        border-radius: 50%; /* Arredonda a imagem */
     
-    /* Cria o gradiente ao redor da imagem */
-    border: 1px solid transparent;
-    background-image: linear-gradient(#fff, #fff), linear-gradient(to right, #8A2BE2, #1E90FF);
-    background-origin: border-box;
-    background-clip: content-box, border-box;
-}
+        /* Borda branca */
+        border: 1px solid #fff;
+    
+        /* Contorno gradiente */
+        box-shadow: 0 0 0 1px #8A2BE2, /* Tamanho e cor do contorno externo */
+                    0 0 0 1px #1E90FF; /* Cor adicional para o gradiente */
+    
+        /* Remove background-clip, que não é necessário neste caso */
+    }
+    
+
+
 
 
 
@@ -373,9 +379,10 @@ body {
     border: none; /*  borda padrão */
     border-radius: 50px;
     height: 150px; 
-    width: 15px; /* Define a largura da linha */
+    width: 12px; /* Define a largura da linha */
     margin-left: 20px;
-    background: linear-gradient(to right, #8A2BE2, #1E90FF); /* Gradiente vertical */
+    background:  #832be2;
+    opacity: 0.8;
 }
 
 
@@ -423,11 +430,7 @@ body {
 
 /*INICIO DA PROGRAMAÇÃO DA TELA DE VANTAGENS*/
 
-/*Programação da div de alinhamento*/
-#alinhamento {
-    margin-top: 100px;
-    margin-bottom: 100px;
-}
+
 /*Fim da programação da div*/
 
 #D1, #D2, #D3, #D4 {
@@ -437,24 +440,28 @@ body {
 }
 
 #D1, #D4 {
-    height: 600px;
+    height: 550px;
+    width: 20rem;
 }
 
 #D2, #D3 {
-    height: 290px;
+    height: 260px;
+    width: 100%;
     margin-top: 10px;
 }
 
 
 .vantagens {
-    font-size: 48px;
+    font-size: 38px;
     font-family: 'RalewayBold';
 }
 
-
 .vantagens1 {
-    font-size: 18px;
+    margin-top: 10px;
+    font-size: 16px;
     line-height: 1.5;
+    font-family:'AlbertSans' ;
+    color: #000;
     text-align: justify;
 }
 
@@ -470,8 +477,7 @@ body {
     max-width: 100%;
     height: auto;
     transform: rotate(8.0deg);
-    margin-bottom: 150px;
-
+    margin-bottom: 5px;
 }
 
 /*FIM DA PROGRAMAÇÃO DA TELA DE VANTAGENS*/
@@ -480,112 +486,81 @@ body {
 
 /*INICIO DA PROGRAMAÇÃO DA TELA DA EQUIPE*/
 
-/*Programação do titulo*/
-#textoE{
+/* Estilo do título */
+#textoE {
     text-align: center;
     margin-bottom: 90px;
     font-family: 'RalewayBold';
 }
-/*Fim da programação do titulo*/
 
-/* Programação da div que contem o carrossel da equipe */
+/* Estilo do contêiner do carrossel */
 .equipe-carrossel-container {
     position: relative;
-    width: 1300px;
-    margin: auto;
-    overflow-x: hidden; 
+    max-width: 1300px;
+    margin: 0 auto 200px;
+    overflow-x: hidden;
     height: 430px;
-    margin-bottom: 200px;
     padding: 0 40px;
 }
-/*Fim da programação da div*/
 
-/*Programação da div que contem os cards do carrossel*/
+/* Estilo do carrossel */
 .equipe-carrossel {
-    display: flex;
-    flex-wrap: nowrap; 
-    white-space: nowrap; 
     transition: transform 0.5s ease-in-out;
 }
-/*Fim da programação da div*/
 
-/*Programação dos cards da equipe*/
+/* Estilo dos cards da equipe */
 .equipe-card {
     width: 260px;
     height: 400px;
-    box-sizing: border-box;
-    padding: 20px;
-    background-color: white;
+    background-color: #fff;
     border-radius: 15px;
     box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.2);
-    margin-right: 40px;
     text-align: center;
+    padding: 20px;
+    margin-right: 40px;
     flex-shrink: 0;
 }
-/*Fim da programação dos cards*/
 
-/*Programação do h3 dos cards*/
 .equipe-card h3{
     font-family: 'RalewayBold';
+    font-size: 22px;
 }
-/*Fim da programação do h3*/
 
-/*Programação das fotos dos cards*/
-.foto{
+/* Estilo da imagem de perfil */
+.foto {
     width: 180px;
     margin-top: 5px;
     margin-bottom: 22px;
 }
-/*Fim da programação das fotos*/
 
-/*Programação do subtitulo com os cargos*/
+/* Estilo do subtítulo com os cargos */
 .cargo {
     color: #777;
+    font-size: 16px;
     margin-top: 10px;
 }
-/*Fim da programação dos subtitulos*/
 
-/*Programação do botão dos cards*/
-.btnEquipe{
+/* Estilo do botão de LinkedIn */
+.btnEquipe {
     width: 103px;
     height: 37px;
-    color: #FFFFFF;
+    color: #fff;
     font-size: 14px;
-    font-family: 'RalewayBold';
-    background: linear-gradient(  to left, #6200EA,  #A452FF); 
-    border-radius: 60.5px;  
-    border: none; 
+    background: linear-gradient(to left, #6200EA, #A452FF);
+    border-radius: 60.5px;
+    border: none;
     margin-top: 23px;
     margin-bottom: 40px;
     font-family: 'RalewayExtraBold';
 }
-/*Fim da programação dos botões*/
 
-/*Programação da div com os botões*/
-.CardBtn2{
-    display: flex;
+/* Estilo dos botões de navegação */
+#prevBtn2, #nextBtn2 {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
 }
-/*Fim da programação da div*/
 
-/*Programação do botão de anterior*/
-#prevBtn2 { 
-    margin-bottom: 200px;
-    background-color: transparent; 
-    border: none; 
-    padding: 0; 
-    cursor: pointer; 
-}
-/*Fim da programação do botão*/
-
-/*Programação do botão de proximo*/
-#nextBtn2 {
-    margin-bottom: 200px;
-    background-color: transparent; 
-    border: none; 
-    padding: 0; 
-    cursor: pointer; 
-}
-/*Fim da programação do botão*/
 /*FIM DA PROGRAMAÇÃO DA TELA DA EQUIPE*/
 
 /*INICIO DA PROGRAMAÇÃO DA TELA DE ORÇAMENTO*/
