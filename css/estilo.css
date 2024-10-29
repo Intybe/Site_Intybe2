@@ -572,7 +572,6 @@ body {
 
 /*Programação do titulo*/
 #tituloO{
-    text-align: center;
     margin-bottom: 50px;
     font-family: 'RalewayBold';
 }
@@ -580,8 +579,6 @@ body {
 
 /*Programação da div com os contatos*/
 #contato{
-    display: flex;
-    justify-content: space-between;
     align-items: flex-start;
     padding: 40px 10%;
 }
@@ -590,10 +587,10 @@ body {
 /*Programação da div com as informações da empresa*/
 .info {
     flex: 1;
-    width: 361.2px;
+    width: 360px;
     height: 550px;
     margin-left: 200px;
-    margin-right: 145.8px;
+    margin-right: 145px;
     margin-top: 30px;
 }
 /*Fim da programação da div*/
@@ -622,8 +619,6 @@ body {
 
 /*Programação da div com os itens (icones e textos)*/
 .item {
-    display: flex;
-    align-items: center;
     margin-bottom: 15px;
 }
 /*Fim da programação da div*/

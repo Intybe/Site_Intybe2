@@ -268,7 +268,7 @@
     
 <!-- EQUIPE-->
 
-<div id="equipe" class="container">
+<section id="equipe" class="container">
     <h1 id="textoE" data-key="tE">Equipe Técnica</h1>
     <div class="d-flex align-items-center justify-content-center mb-5">
         <button id="prevBtn2" class="me-3">
@@ -326,7 +326,90 @@
             <img src="img/next.png" alt="Próximo">
         </button>
     </div>
-</div>
+</section>
+
+
+    <!--ORÇAMENTO-->
+    
+    <section id="orçamento" class="row">
+        <h1 id="tituloO" class="text-center" data-key="tO">Entre em contato!</h1>
+        <div id="contato" class="d-flex justify-content-between">
+            <div class="col-md-5 info pr-4">
+                <h2 data-key="tM">Meios de Comunicação</h2>
+                <p data-key="pM">Fale conosco e garanta a solução que você precisa.</p>
+    
+                <div class="item d-flex align-items-center mb-3">
+                    <div class="icon-container">
+                        <a href='https://www.google.com/maps/place/Av.+Ang%C3%A9lica,+525+-+Vila+Angelica,+S%C3%A3o+Paulo+-+SP,+01227-000/@-23.5376361,-46.6569129,17z/data=!3m1!4b1!4m6!3m5!1s0x94ce59a785892ae7:0x76cb22a2e02047f9!8m2!3d-23.537641!4d-46.654338!16s%2Fg%2F11w3lc8h3j?entry=ttu&g_ep=EgoyMDI0MTAxNi4wIKXMDSoASAFQAw%3D%3D'><img src="img/Location.png" alt="Local Icon" class="icon"></a>
+                    </div>
+                    <div class="texto-container">
+                        <h3>Local</h3>
+                        <p data-key="pL">Avenida Angélica, 525 – Bela Vista, São Paulo</p>
+                    </div>
+                </div>
+                
+                <div class="item d-flex align-items-center mb-3">
+                    <div class="icon-container">
+                        <a href='mailto:intybe.tech@gmail.com?subject=Assunto&body=Olá, gostaria de entrar em contato.'><img src="img/Email.png" alt="Email Icon" class="icon"></a>
+                    </div>
+                    <div class="texto-container">
+                        <h3>Email</h3>
+                        <p>intybe.tech@gmail.com</p>
+                    </div>
+                </div>
+    
+                <div class="item d-flex align-items-center mb-3">
+                    <div class="icon-container">
+                        <a href="https://wa.me/5511953327170?text=Olá,%20gostaria%20de%20mais%20informações." target="_blank"><img src="img/WhatsApp.png" alt="Whatsapp Icon" class="icon"></a>
+                    </div>
+                    <div class="texto-container">
+                        <h3>Whatsapp</h3>
+                        <p>55+ (11) 95332-7170</p>
+                    </div>
+                </div>
+    
+                <hr id="linha3" class="my-4">
+
+                <div class="redes-sociais">
+                    <p data-key="pR">SIGA-NOS:</p>
+                    <div class="icons d-flex gap-2">
+                        <a href='https://www.facebook.com/profile.php?id=61560095681939'><img src="img/FacebookP.png" alt="Facebook Icon" class="social-icon"></a>
+                        <a href='https://www.instagram.com/intybedev/'><img src="img/instagramP.png" alt="Instagram Icon" class="social-icon"></a>
+                        <a href='https://www.linkedin.com/in/intybe-tech-861263311/'><img src="img/linkedinP.png" alt="LinkedIn Icon" class="social-icon-l"></a>
+                    </div>
+                </div> 
+            </div> 
+            
+            <div id="divO" class="col-md-5 p-4 shadow bg-white rounded">
+                <h2 id="tO" class="text-center mb-4" data-key="orcamento">Orçamento</h2>
+                <form>
+                    <div class="form-group input-form">
+                        <input type="text" id="nome" class="input" name="nome" required>
+                        <label for="nome" data-key="l1">Nome</label>
+                    </div>
+                
+                    <div class="form-group input-form">
+                        <input type="email" id="email" class="input" name="email" required>
+                        <label for="email" data-key="l2">Endereço de email</label>
+                    </div>
+                
+                    <div class="form-group input-form">
+                        <input type="text" id="assunto" class="input" name="assunto" required>
+                        <label for="assunto" data-key="l3">Assunto</label>
+                    </div>
+                
+                    <div id="form-group input-form2">
+                        <label id="desc" for="descricao" data-key="l4">Descreva o que você deseja:</label>
+                        <textarea id="descricao" name="descricao" rows="5"></textarea><br>
+                    </div>
+                
+                    <button id="enviar" type="submit" class="btn btn-dark btn-block mt-3" data-key="enviar">Enviar</button>
+                </form>
+                
+            </div>
+        </div>
+    </section>
+
 
 
 
