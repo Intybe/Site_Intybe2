@@ -193,10 +193,6 @@ body {
 #imgQmSomos{
     width: auto;
     height: auto;
-    margin-left: 30px;
-    margin-right: 5px;
-    margin-top: 0px;
-    margin-bottom: 200px;
 }
 /*Fim da programação da img*/
 
@@ -211,8 +207,6 @@ body {
 /*Programação dos paragrafos nomeados como class titulo2*/
 .textoQuemSomos{
     font-size: 18px;
-    text-align: justify;
-    margin-top: 30px;
 }
 /*Fim da programação dos paragrafos*/
 
@@ -222,53 +216,38 @@ body {
     margin-top: 28px;
 }
 
-/*Programação da div de alinhamento dos icones e textos nomeada como "caixa"*/
-#caixa{
-    width: 605px;
-    height: 486px;
+.caixa1{
+    margin-right: 15px;
+    margin-bottom: 15px;
 }
-/*Fim da programação da div*/
 
-/*Programação da div de alinhamento dos icones e textos esquerdos nomeada como "caixa1"*/
-#caixa1{
-    margin-top: 40px;
-    margin-right: 37px;
+.caixa2{
+    margin-left: 20px;
+    margin-bottom: 15px;
 }
-/*Fim da programação da div*/
-
-/*Programação da div de alinhamento dos icones e textos direitos nomeada como "caixa2"*/
-#caixa2{
-    margin-top: 40px;
-    margin-left: 47px;
-}
-/*Fim da programação da div*/
 
 /*Programação da div de alinhamento dos icones e textos inferiores nomeada como "caixa4"*/
 .caixa4{
     margin-top: 25px;
 }
-/*Fim da programação da div*/
+
 
 /*programação dos icones*/
 .icon1{
     width: 30px;
     height: 30px;
 }
-/*Fim da programação dos icones*/
+
 
 /*Programação das palavras dos icones*/
-.p1{
-    margin-left: 11px;
-    line-height: 2;
-}
+
 /*Fim da programação das palavras*/
 
 /*Programação da linha entre os icones*/
-#linha1{
-    margin-left: 0px;
-    margin-right: 0px;
+.linha1{
     height:90px;
     margin-top: 40px;
+    opacity: 1;
     border: 1px solid #1D40D6;
 }
 /*FIM DA PROGRAMAÇÃO DA TELA DE QMSOMOS*/
@@ -485,6 +464,10 @@ body {
 
 
 /*INICIO DA PROGRAMAÇÃO DA TELA DA EQUIPE*/
+
+#equipe{
+    margin-top: 200px;
+}
 
 /* Estilo do título */
 #textoE {
@@ -995,3 +978,4 @@ body {
     border: none;
 }
 
+    

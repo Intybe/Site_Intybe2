@@ -27,7 +27,7 @@
                             <!-- Cada item da lista representa uma seção do site -->
                             <li class="nav-item"><a class="nav-link" href="#home" data-key="home">Home</a></li>
                             <li class="nav-item"><a class="nav-link" href="#qmsomos" data-key="qmsomos">Quem Somos</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#clientes" data-key="clientes">Clientes</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#tituloClientes" data-key="clientes">Clientes</a></li>
                             <li class="nav-item"><a class="nav-link" href="#vantagens" data-key="vantagens">Vantagens</a></li>
                             <li class="nav-item"><a class="nav-link" href="#equipe" data-key="equipe">Equipe</a></li>
                             <li class="nav-item"><a class="nav-link" href="#orcamento" data-key="orcamento">Orçamento</a></li>
@@ -49,6 +49,10 @@
             </nav>
         </header>
         
+<section class="Geral justify-content-center align-items-center">
+
+
+
         <!-- HOME -->
            <!-- Seção Home com Flexbox e alinhamento centralizado -->
     <section class="home d-flex justify-content-center  flex-lg-row py-2">
@@ -83,7 +87,7 @@
                 <img src="img/img2.png" alt="Imagem quem somos" id="imgQmSomos" class ="img-fluid">
             </div>
             <!-- div texto do lado direito da tela quem somos -->
-                <div id="textoQuemSomos" class="col-12 col-lg-6 text-center text-lg-start">
+                <div id="textoQuemSomos" class="col-12 col-lg-5 text-center text-lg-start">
                     <h1 id="tituloQuemSomos" data-key="titulo2">Inovação e Confiabilidade <br> em cada Solução.</h1>
 
                     <p class="texto2" data-key="texto2">A Intybe é um empresa especializada em Desenvolvimento de Sistemas, <br>
@@ -93,24 +97,35 @@
 
                     <p class="texto2_2" data-key="texto2_2">Conheça alguns de nossos valores:</p>
                     
-                    <div id="caixa" class="d-flex"> 
-                        <div id="caixa1">
-                            <div class="caixa3 d-flex"><img src="img/icon1.png" alt="" class="icon1"><p class="p1" data-key="qualidade">Qualidade</p></div>
-                            <div class="caixa4 d-flex"><img src="img/icon1.png" alt="" class="icon1"><p class="p1" data-key="confiabilidade">Confiabilidade</p></div>
+                    <div id="caixa" class="d-flex align-items-center justify-content-start">
+                        <div>
+                            <div class="caixa1 col-4 d-flex">
+                                <img src="img/icon1.png" alt="" class="icon1"><p class="p1" data-key="qualidade">Qualidade</p>
+                            </div>
+                            <div class="caixa1 col-4 d-flex">
+                                <img src="img/icon1.png" alt="" class="icon1"><p class="p1" data-key="confiabilidade">Confiabilidade</p>
+                            </div>
                         </div>
-                        <hr id="linha1">
-                        <div id="caixa2">
-                            <div class="caixa3 d-flex"><img src="img/icon1.png" alt="" class="icon1"><p class="p1" data-key="transparencia">Transparência</p></div>
-                            <div class="caixa4 d-flex"><img src="img/icon1.png" alt="" class="icon1"><p class="p1" data-key="inovação">Inovação</p></div>
+                    
+                        <hr class="linha1">
+                    
+                        <div>
+                            <div class="caixa2 col-4 d-flex">
+                                <img src="img/icon1.png" alt="" class="icon1"><p class="p1" data-key="transparencia">Transparência</p>
+                            </div>
+                            <div class="caixa2 col-4 d-flex">
+                                <img src="img/icon1.png" alt="" class="icon1"><p class="p1" data-key="inovação">Inovação</p>
+                            </div>
                         </div>
                     </div>
+                    
                 </div>
         </div>
     </section>
 
     <!--CARDS DE CLIENTES-->
 
-    <section class="Cliente text-center my-3">
+    <section class="Cliente text-center my-2">
             <h1 id="tituloClientes"  data-key="tituloClientes">Principais Clientes</h1>
             <div class="CardBtn d-flex justify-content-center align-items-center"> 
             <!-- btn anterior-->
@@ -224,14 +239,14 @@
                     </div>
 
                     <button id="nextBtn" class="btn p-0 ms-2">
-                        <img src="img/next.png" alt="Próximo">
+                        <img src="img/next.png" alt="Próximo">      
                     </button>
             </div>
     </section>
     
     <!-- VANTAGENS -->
 
-    <section class="vantagens d-flex flex-column align-items-center justify-content-center">
+    <section class="vantagens d-flex flex-column align-items-center justify-content-center my-5">
        
             <div class="row justify-content-center">
 
@@ -395,7 +410,7 @@
                 
                     <div class="form-group input-form">
                         <input type="text" id="assunto" class="input" name="assunto" required>
-                        <label for="assunto" data-key="l3">Assunto</label>
+                        <label for="assunto" data-key="l3">Assunto</label>  
                     </div>
                 
                     <div id="form-group input-form2">
@@ -409,7 +424,7 @@
             </div>
         </div>
     </section>
-
+</section>
 
 
 
