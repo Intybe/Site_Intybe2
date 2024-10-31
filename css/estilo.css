@@ -89,6 +89,7 @@ body {
     margin-top: 0.5rem; /* Margem superior para espaçamento */
 }
 
+
 .navbar-brand, #navbarNav, #language-switcher {
     text-align: center; /* Centraliza o conteúdo de cada seção na navbar */
 }
@@ -114,6 +115,7 @@ body {
 
 /* Estilo geral da seção Home */
 .home {
+    margin-top: 100px;
     font-family: 'RalewayBold', sans-serif; /* Fonte personalizada */
 
     
@@ -795,7 +797,8 @@ body {
 .footer{
     background-color:#EEEEF5;
     height: 350px;
-    border-radius: 30px;
+    border-top-left-radius: 30px; 
+    border-top-right-radius: 30px; 
 }
 
 /*Programação da div com as informações*/
