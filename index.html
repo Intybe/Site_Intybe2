@@ -289,8 +289,8 @@
         <button id="prevBtn2" class="me-3">
             <img src="img/prev.png" alt="Anterior">
         </button>
-        <div class="equipe-carrossel-container d-flex justify-content-center align-items-center">
-            <div class="equipe-carrossel">
+        <div class="equipe-carrossel-container justify-content-center align-items-center ">
+            <div class="equipe-carrossel d-flex">
                 <div class="equipe-card">
                     <img src="img/Evelyn.png" alt="foto" class="foto img-fluid"> 
                     <h3>Evelyn Gonçalves</h3>
@@ -346,9 +346,9 @@
 
     <!--ORÇAMENTO-->
     
-    <section id="orçamento" class="row">
-        <h1 id="tituloO" class="text-center" data-key="tO">Entre em contato!</h1>
-        <div id="contato" class="d-flex justify-content-between">
+    <section id="orçamento" class="justify-content-start align-items-start">
+        <h1 id="tituloOrcamento" class="text-center" data-key="tO">Entre em contato!</h1>
+        <div id="Corpo" class="d-flex">
             <div class="col-md-5 info pr-4">
                 <h2 data-key="tM">Meios de Comunicação</h2>
                 <p data-key="pM">Fale conosco e garanta a solução que você precisa.</p>
@@ -394,35 +394,39 @@
                     </div>
                 </div> 
             </div> 
-            
-            <div id="divO" class="col-md-5 p-4 shadow bg-white rounded">
-                <h2 id="tO" class="text-center mb-4" data-key="orcamento">Orçamento</h2>
-                <form>
-                    <div class="form-group input-form">
-                        <input type="text" id="nome" class="input" name="nome" required>
-                        <label for="nome" data-key="l1">Nome</label>
+        
+            <div id="FormOrcamento" class="col-md-5 p-4 shadow bg-white justify-content-center align-items-center">
+                <h2 id="tituloFormOrcamento" class="text-center" data-key="orcamento">Orçamento</h2>
+                <form >
+                    <div class="Itens justify-content-center align-items-center">
+                        <div class="form-group input-form">
+                            <input type="text" id="nome" class="input" name="nome" required>
+                            <label for="nome" data-key="l1">Nome</label>
+                        </div>
+                    
+                    
+                        <div class="form-group input-form">
+                            <input type="text" id="email" class="input" name="email" required>
+                            <label for="assunto" data-key="l3">Endereço de Email</label>  
+                        </div>
+
+                        <div class="form-group input-form">
+                            <input type="text" id="assunto" class="input" name="assunto" required>
+                            <label for="assunto" data-key="l3">Assunto</label>  
+                        </div>
+                    
+                        <div class="form-group input-form2">
+                            <label class="desc" for="descricao" data-key="l4">Descreva o que você deseja:</label>
+                            <textarea id="descricao" name="descricao" rows="5"></textarea>
+                        </div>
+                    
+                        <button id="enviar" type="submit" class="btn btn-dark btn-block mt-3" data-key="enviar">Enviar</button>
                     </div>
-                
-                    <div class="form-group input-form">
-                        <input type="email" id="email" class="input" name="email" required>
-                        <label for="email" data-key="l2">Endereço de email</label>
-                    </div>
-                
-                    <div class="form-group input-form">
-                        <input type="text" id="assunto" class="input" name="assunto" required>
-                        <label for="assunto" data-key="l3">Assunto</label>  
-                    </div>
-                
-                    <div id="form-group input-form2">
-                        <label id="desc" for="descricao" data-key="l4">Descreva o que você deseja:</label>
-                        <textarea id="descricao" name="descricao" rows="5"></textarea><br>
-                    </div>
-                
-                    <button id="enviar" type="submit" class="btn btn-dark btn-block mt-3" data-key="enviar">Enviar</button>
+                    
                 </form>
                 
             </div>
-        </div>
+        </div> 
     </section>
 </section>
 
