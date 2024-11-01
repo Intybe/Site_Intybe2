@@ -257,7 +257,7 @@ body {
 .clientes-carrossel-container {
     position: relative;
     width: 90%;
-    height: 100%;
+    height: 370px;
     margin: auto;
     overflow-x: hidden; 
     height: 370px;
@@ -270,18 +270,15 @@ body {
 .clientes-carrossel {
     flex-wrap: nowrap; 
     white-space: nowrap; 
-    transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease; /* Aplique a transição de transformação */
 }
 
 
 /*Programação dos cards dos clientes*/
 .cliente-card {
-    width: 530px;
-    height: 350px;
-    margin-right: 40px;
-    padding: 20px;
+    width: 500px;
+    height: 340px;
     box-sizing: border-box;
-    background-color: white;
     border-radius: 15px;
     box-shadow: 5px 10px 20px    rgba(0, 0, 0, 0.2);
     text-align: center;
@@ -319,11 +316,6 @@ body {
         /* Remove background-clip, que não é necessário neste caso */
     }
     
-
-
-
-
-
 /*Programação da div de alinhamento de titulo e subtitulo dos cards*/
 .textoC h3{
     font-size: 22px;
@@ -371,8 +363,7 @@ body {
 .CardBtn{
     width: 90%;
     height: auto;
-    justify-content: center;
-    margin-left: 50px;
+    margin-left: 80px;
 }
 
 /*Programação do botão de anterior*/
@@ -477,7 +468,7 @@ body {
 
 /* Estilo do carrossel */
 .equipe-carrossel {
-    transition: transform 0.8s ease-in-out;
+    transition: transform 0.5s ease-in-out;
 }
 
 /* Estilo dos cards da equipe */

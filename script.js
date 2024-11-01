@@ -1,114 +1,115 @@
-/*INICIO DA PROGRAMAÇÃO DO CARROSSEL DE CLIENTES*/
-// Seleciona os elementos do DOM para o carrossel de clientes
-const clientesCarrossel = document.querySelector('.clientes-carrossel');
-const clientesCards = document.querySelectorAll('.cliente-card');
-const prevBtn = document.getElementById('prevBtn');
-const nextBtn = document.getElementById('nextBtn');
+// CARROSSEL DA CLIENTES
+// Seleciona e define variáveis para os elementos do carrossel de clientes
+let currentIndexClientes = 0;
+const cardsClientes = document.querySelectorAll('.cliente-card');
+const totalCardsClientes = cardsClientes.length;
+const cardWidthClientes = cardsClientes[0].offsetWidth;
+const carrosselClientes = document.querySelector('.clientes-carrossel');
 
-let clienteCurrentIndex = 0; // Índice inicial do carrossel de clientes
-
-// Função para atualizar a posição do carrossel de clientes
-function updateClientesCarousel() {
-  const cardWidth = clientesCards[0].offsetWidth + 40; // Largura do cartão mais a margem direita (40px)
-  const offset = -clienteCurrentIndex * cardWidth; // Calcula o deslocamento com base no índice
-  clientesCarrossel.style.transform = `translateX(${offset}px)`;
-}
-
-// Evento do botão 'Próximo' para o carrossel de clientes
-nextBtn.addEventListener('click', () => {
-  if (clienteCurrentIndex < clientesCards.length - 1) { // Mostra apenas 1 cartão por vez
-    clienteCurrentIndex++; // Avança para o próximo cartão
-  } else {
-    clienteCurrentIndex = 0; // Volta para o primeiro cartão se estiver no final
-  }
-  updateClientesCarousel(); // Atualiza o carrossel de clientes
+// Clona os primeiros cartões e os adiciona ao final para criar o loop contínuo
+cardsClientes.forEach(card => {
+    let clone = card.cloneNode(true);
+    carrosselClientes.appendChild(clone);
 });
 
-// Evento do botão 'Anterior' para o carrossel de clientes
-prevBtn.addEventListener('click', () => {
-  if (clienteCurrentIndex > 0) {
-    clienteCurrentIndex--; // Volta para o cartão anterior
-  } else {
-    clienteCurrentIndex = clientesCards.length - 1; // Vai para o último cartão se estiver no início
-  }
-  updateClientesCarousel(); // Atualiza o carrossel de clientes
+// Função para avançar no carrossel
+document.getElementById('nextBtn').addEventListener('click', () => {
+    currentIndexClientes++;
+
+    // Se o índice alcançar o final dos cartões originais, faz o reset
+    carrosselClientes.style.transition = 'transform 0.5s ease';
+    carrosselClientes.style.transform = `translateX(-${cardWidthClientes * currentIndexClientes}px)`;
+
+    // Quando chegar ao final, "pula" para o início de forma suave
+    if (currentIndexClientes >= totalCardsClientes) {
+        setTimeout(() => {
+          carrosselClientes.style.transition = 'none';
+            currentIndexClientes = 0;
+            carrosselClientes.style.transform = `translateX(0px)`;
+        }, 500); // Espera a transição acabar
+    }
 });
 
-// Atualiza a posição inicial do carrossel de clientes
-updateClientesCarousel();
+// Função para retroceder no carrossel
+document.getElementById('prevBtn').addEventListener('click', () => {
+    currentIndexClientes--;
 
-// Função para girar o carrossel automaticamente
-function autoRotateClientesCarousel() {
-  if (clienteCurrentIndex < clientesCards.length - 1) { // Mostra apenas 1 cartão por vez
-    clienteCurrentIndex++; // Avança para o próximo cartão
-  } else {
-    clienteCurrentIndex = 0; // Volta para o primeiro cartão se estiver no final
-  }
-  updateClientesCarousel(); // Atualiza o carrossel de clientes
-}
-
-// Gira o carrossel automaticamente a cada 5 segundos
-setInterval(autoRotateClientesCarousel, 5000);
-
-
-/*INICIO DA PROGRAMAÇÃO DO CARROSSEL DA EQUIPE*/
-// Seleciona os elementos do DOM para o carrossel de equipe
-const equipeCarouselContainer = document.querySelector('.equipe-carrossel-container');
-const equipeCarousel = equipeCarouselContainer.querySelector('.equipe-carrossel');
-const equipeCards = equipeCarousel.querySelectorAll('.equipe-card');
-const prevButton = document.getElementById('prevBtn2');
-const nextButton = document.getElementById('nextBtn2');
-
-let currentCardIndex = 0; // Índice inicial do carrossel de equipe
-
-// Função para atualizar a posição do carrossel de equipe
-function updateCarouselPosition() {
-  const cardWidth = equipeCards[0].offsetWidth + 40; // Largura do cartão mais a margem direita (40px)
-  const offset = -currentCardIndex * cardWidth; // Calcula o deslocamento com base no índice
-  equipeCarousel.style.transform = `translateX(${offset}px)`;
-}
-
-// Evento do botão 'Próximo' para o carrossel de equipe
-nextButton.addEventListener('click', () => {
-  if (currentCardIndex < equipeCards.length - 1) { // Mostra apenas 1 cartão por vez
-    currentCardIndex++; // Avança para o próximo cartão
-  } else {
-    currentCardIndex = 0; // Volta para o primeiro cartão se estiver no final
-  }
-  updateCarouselPosition(); // Atualiza o carrossel de equipe
+    if (currentIndexClientes < 0) {
+        currentIndexClientes = totalCardsClientes - 1; // Posição final dos cartões duplicados
+        carrosselClientes.style.transition = 'none';
+        carrosselClientes.style.transform = `translateX(-${cardWidthClientes * totalCardsClientes}px)`;
+        setTimeout(() => {
+          carrosselClientes.style.transition = 'transform 0.5s ease';
+          carrosselClientes.style.transform = `translateX(-${cardWidthClientes * currentIndexClientes}px)`;
+        }, 20);
+    } else {
+      carrosselClientes.style.transition = 'transform 0.5s ease';
+      carrosselClientes.style.transform = `translateX(-${cardWidthClientes * currentIndexClientes}px)`;
+    }
 });
 
-// Evento do botão 'Anterior' para o carrossel de equipe
-prevButton.addEventListener('click', () => {
-  if (currentCardIndex > 0) {
-    currentCardIndex--; // Volta para o cartão anterior
-  } else {
-    currentCardIndex = equipeCards.length - 1; // Vai para o último cartão se estiver no início
-  }
-  updateCarouselPosition(); // Atualiza o carrossel de equipe
+// Inicializa a posição do carrossel e define a transição
+carrosselClientes.style.transition = 'transform 0.5s ease';
+carrosselClientes.style.transform = `translateX(0)`;
+
+// CARROSSEL DA EQUIPE
+let currentIndexEquipe = 0;
+const cardsEquipe = document.querySelectorAll('.equipe-card');
+const totalCardsEquipe = cardsClientes.length;
+const cardWidthEquipe = cardsClientes[0].offsetWidth;
+const carrosselEquipe = document.querySelector('.equipe-carrossel');
+
+
+cardsEquipe.forEach(card => {
+    let clone = card.cloneNode(true);
+    carrosselEquipe.appendChild(clone);
 });
 
-// Função para girar o carrossel da equipe automaticamente
-function autoRotateCarousel() {
-  if (currentCardIndex < equipeCards.length - 1) { // Mostra apenas 1 cartão por vez
-    currentCardIndex++; // Avança para o próximo cartão
-  } else {
-    currentCardIndex = 0; // Volta para o primeiro cartão se estiver no final
-  }
-  updateCarouselPosition(); // Atualiza o carrossel de equipe
-}
+// BOTÃO AVANÇAR
+document.getElementById('nextBtn2').addEventListener('click', () => {
+  currentIndexEquipe++;
 
-// Gira o carrossel da equipe automaticamente a cada 5 segundos
-setInterval(autoRotateCarousel, 5000);
+    // Se o índice alcançar o final dos cartões originais, faz o reset
+    carrosselEquipe.style.transition = 'transform 0.5s ease';
+    carrosselEquipe.style.transform = `translateX(-${cardWidthEquipe * currentIndexEquipe}px)`;
 
-document.getElementById("hamburguer-button").addEventListener("click", function() {
-  const menu = document.getElementById("menu"); // Supondo que exista um menu com id 'menu'
-  menu.classList.toggle("active"); // Mostra ou esconde o menu ao alternar a classe 'active'
+    // quando cehga até o final volta sem pular p final
+    if (currentIndexEquipe >= totalCardsEquipe) {
+        setTimeout(() => {
+          carrosselEquipe.style.transition = 'none';
+            currentIndexEquipe = 0;
+            carrosselEquipe.style.transform = `translateX(0px)`;
+        }, 500); // Espera a transição acabar
+    }
 });
 
+// Função para retroceder no carrossel
+document.getElementById('prevBtn2').addEventListener('click', () => {
+  currentIndexEquipe--;
+
+    if (currentIndexEquipe < 0) {
+      currentIndexEquipe = totalCardsEquipe - 1; // Posição final dos cartões duplicados
+        carrosselEquipe.style.transition = 'none';
+        carrosselEquipe.style.transform = `translateX(-${cardWidthEquipe * totalCardsEquipe}px)`;
+        setTimeout(() => {
+          carrosselEquipe.style.transition = 'transform 0.5s ease';
+          carrosselEquipe.style.transform = `translateX(-${cardWidthEquipe * currentIndexEquipe}px)`;
+        }, 20);
+    } else {
+      carrosselEquipe.style.transition = 'transform 0.5s ease';
+      carrosselEquipe.style.transform = `translateX(-${cardWidthEquipe * currentIndexEquipe}px)`;
+    }
+});
+
+// Inicializa a posição do carrossel e define a transição
+carrosselEquipe.style.transition = 'transform 0.5s ease';
+carrosselEquipe.style.transform = `translateX(0)`;
 
 
 
+
+
+//HAMBURGUER
 function toggleDropdown() {
   document.getElementById("language-switcher").classList.toggle("show");
 }
@@ -135,6 +136,8 @@ window.onclick = function(event) {
       }
   }
 }
+
+
 
 
 const translations = {
