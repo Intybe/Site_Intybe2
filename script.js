@@ -107,8 +107,6 @@ carrosselEquipe.style.transform = `translateX(0)`;
 
 
 
-
-
 //HAMBURGUER
 function toggleDropdown() {
   document.getElementById("language-switcher").classList.toggle("show");
@@ -150,7 +148,7 @@ const translations = {
       orcamento: "Orçamento",
       home_title: "Suas Ideias.",
       nossa: "Nossa",
-      solucao: "Solução",
+      solucao: "Solução.",
       orcamento_gratuito: "Orçamento gratuito",
       veja_mais: "Veja mais",
       titulo2: "Inovação e Confiabilidade em cada Solução.",
@@ -214,7 +212,7 @@ const translations = {
       orcamento: "Budget",
       home_title: "Your Ideas.",
       nossa: "Our",
-      solucao: "Solution",
+      solucao: "Solution.",
       orcamento_gratuito: "Free budget",
       veja_mais: "See more",
       titulo2: "Innovation and Reliability in each Solution.",
