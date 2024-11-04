@@ -34,11 +34,12 @@
 }
 /*Fim da declaração de fontes*/
 
+
 /*Programação do body*/
 body {
     background-color: #F8F8FF; 
     font-family: 'AlbertSans';
-    margin: 0; 
+    padding: 10px; 
     overflow-x: hidden;
 }
 /*Fim da programação do body*/
@@ -108,6 +109,45 @@ body {
     background-color: white;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 1;
+}
+
+/* Estilo para a navbar em dispositivos móveis */
+@media (max-width: 990px) {
+    /* Centraliza o logo, coloca o menu hamburguer à direita e o idioma à esquerda */
+    #nav .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* Estilo do logo centralizado */
+    .navbar-brand {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+    }
+
+    /* Espaço para o botão hamburguer à direita */
+    .navbar-toggler {
+        border: none; /* Remove borda do botão hamburguer */
+        order: 3; /* Posiciona o botão no final da linha */
+    }
+
+    /* Estilo do switcher de idioma à esquerda */
+    #language-switcher {
+        order: 1;
+    }
+
+    /* Fundo do menu hamburguer */
+    #navbarNav {
+        background-color: #fff;
+    }
+
+    /* Espaçamento dos itens do menu hamburguer */
+    .navbar-nav .nav-item {
+        margin-bottom: 10px;
+    }
 }
 
 
@@ -186,10 +226,83 @@ body {
     margin-top: 10px;
 }
 
+@media (max-width: 990px) {
+    .FraseDeEfeito{
+      align-items: center;
+      justify-content: center;
+    }
+    
+    /* Estilo dos títulos */
+    #home h1[data-key="home_title"] {
+        font-size: 40px; 
+        color: #000000; /* Cor preta */
+        margin-bottom: 0;
+    }
+    
+    
+    /* Estilo da palavra "Nossa" */
+    #titulo1 h1 {
+        font-size: 40px; /* Tamanho da fonte */
+        color: #000000; /* Cor preta */
+        font-weight: bold; /* Negrito */
+        margin: 0; /* Remove margem */
+    }
+    
+    
+    
+    /* Estilo da palavra "Solução" com o degradê */
+    #solucao {
+        background: linear-gradient(to left, #6200EA, #A452FF); /* Degradê roxo */
+        -webkit-background-clip: text; /* Efeito de clip no texto */
+        -webkit-text-fill-color: transparent; 
+        font-weight: bold; 
+        margin-left: 5px; /* Pequeno espaçamento entre "Nossa" e "Solução" */
+    }
+    
+    
+    .btn1{
+        border-radius: 60px;
+        width: 230px;
+        height: 50px;
+        margin-right: 26px;
+        font-size: 18px;
+        color: #FFFFFF;
+        font-family: 'RalewayBold';
+        background-color: #000000;
+        border: solid 2px;
+        text-decoration: none;
+    }
+    
+    
+    
+    .btn2{
+        border-radius: 60px;
+        width: 172px;
+        height: 50px;
+        font-size: 18px;
+        font-family: 'RalewayBold';
+        color: #000;
+        border: 2px solid #000;
+        background-color: transparent;
+        text-decoration: none;
+    }
+    
+    #imgHome {
+        height: 380px; 
+        max-width: 100%;
+        margin-top: 10px;
+        margin-right: 0%;
+    }
+
+}
+
 /*FIM DA PROGRAMAÇÃO DA TELA HOME*/
 
 
 /*INICIO DA PROGRAMAÇÃO DA TELA QMSOMOS*/
+#qmsomos{
+    margin-bottom: 20px;
+}
 
 /*Programação da imagem da qmsomos nomeada como "img2"*/
 #imgQmSomos{
@@ -248,21 +361,17 @@ body {
 
 #tituloClientes{
     text-align: center;
-    margin-bottom: 90px;
+    margin-top: 40px;
+    margin-bottom: 50px;
     font-family: 'RalewayBold';
 }
 
 
 /* Programação da div que contem o carrossel de clientes */
 .clientes-carrossel-container {
-    position: relative;
-    width: 90%;
-    height: 370px;
-    margin: auto;
-    overflow-x: hidden; 
-    height: 370px;
+    overflow-x: hidden;  
     margin-bottom: 100px;
-    padding: 0 40px;
+    padding-inline: 20px;
 }
 
 
@@ -276,14 +385,15 @@ body {
 
 /*Programação dos cards dos clientes*/
 .cliente-card {
-    width: 500px;
-    height: 340px;
+    width: 380px;
+    height: 300px;
     box-sizing: border-box;
     border-radius: 15px;
-    box-shadow: 5px 10px 20px    rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 3px 30px    rgba(0, 0, 0, 0.2);
     text-align: center;
     flex-shrink: 0;
     border-radius: 30px;
+    font-size: 16px ;
 }
 
 
@@ -355,15 +465,9 @@ body {
     white-space: normal; 
     overflow: hidden;
     text-overflow: ellipsis; 
-    font-size: 20px;
+    font-size: 16px;
     margin-left: 10px;
-}
-
-/* Programaçao da div de alinhamento dos botões */
-.CardBtn{
-    width: 90%;
-    height: auto;
-    margin-left: 80px;
+    font-family:'AlbertSans' ;
 }
 
 /*Programação do botão de anterior*/
@@ -400,19 +504,19 @@ body {
 }
 
 #D1, #D4 {
-    height: 550px;
-    width: 20rem;
+    height: 460px;
+    width: 100%;
 }
 
 #D2, #D3 {
-    height: 260px;
+    height: 220px;
     width: 100%;
     margin-top: 10px;
 }
 
 
 .vantagens {
-    font-size: 38px;
+    font-size: 32px;
     font-family: 'RalewayBold';
 }
 
@@ -427,17 +531,19 @@ body {
 
 /* Imagens vantagens */
 #img3{
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
     transform: rotate(0.76deg);
-    margin-top: 150px;
+    margin-left: 30px;
+    margin-top: 80px;
 }
 
 #img4 {
-    max-width: 100%;
+    max-width: 75%;
     height: auto;
     transform: rotate(8.0deg);
-    margin-bottom: 5px;
+    margin-left: 30px;
+    margin-top: 10px;
 }
 
 /*FIM DA PROGRAMAÇÃO DA TELA DE VANTAGENS*/
@@ -447,23 +553,21 @@ body {
 /*INICIO DA PROGRAMAÇÃO DA TELA DA EQUIPE*/
 
 #equipe{
-    margin-top: 200px;
+    margin-top: 10rem;
 }
 
 /* Estilo do título */
 #textoE {
     text-align: center;
-    margin-bottom: 90px;
+    margin-bottom: 50px;
     font-family: 'RalewayBold';
 }
 
 /* Estilo do contêiner do carrossel */
 .equipe-carrossel-container {
-    position: relative;
-    max-width: 1000px;
+    
     overflow-x: hidden;
-    height: 430px;
-    padding: 0 40px;
+    height: auto;
 }
 
 /* Estilo do carrossel */
@@ -473,11 +577,11 @@ body {
 
 /* Estilo dos cards da equipe */
 .equipe-card {
-    width: 240px;
-    height: 380px;
+    width: 200px;
+    height: 340px;
     background-color: #fff;
     border-radius: 15px;
-    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
     text-align: center;
     padding: 20px;
     margin-right: 40px;
@@ -486,12 +590,12 @@ body {
 
 .equipe-card h3{
     font-family: 'RalewayBold';
-    font-size: 22px;
+    font-size: 16px;
 }
 
 /* Estilo da imagem de perfil */
 .foto {
-    width: 180px;
+    width: 140px;
     margin-top: 5px;
     margin-bottom: 22px;
 }
@@ -499,7 +603,7 @@ body {
 /* Estilo do subtítulo com os cargos */
 .cargo {
     color: #777;
-    font-size: 16px;
+    font-size: 14px;
     margin-top: 10px;
 }
 
@@ -526,14 +630,14 @@ body {
 
 /*INICIO DA PROGRAMAÇÃO DA TELA DE ORÇAMENTO*/
 /*Programação da div q contem o conteudo*/
-#orçamento{
-    margin-top: 9rem;
-}
+
 /*Fim da programação da div*/
 
 /*Programação do titulo*/
 #tituloOrcamento{
     font-family: 'RalewayBold';
+    margin-top: 120px;
+    margin-bottom: -30px;
 }
 /*Fim da programação do titulo*/
 
@@ -546,12 +650,7 @@ body {
 
 /*Programação da div com as informações da empresa*/
 .info {
-    flex: 1;
-    width: 360px;
-    height: 550px;
-    margin-left: 200px;
-    margin-right: 145px;
-    margin-top: 30px;
+    margin-top: 10px;
 }
 /*Fim da programação da div*/
 
@@ -666,8 +765,8 @@ body {
 /*Programação da div que contem o formulario*/
 #FormOrcamento{
     margin-top: 100px;
-    width:435px ;
-    height: 645px;
+    width:400px ;
+    height: 545px;
     background-color: #FFFFFF;
     border-radius: 40px;
     box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.2);
@@ -676,20 +775,23 @@ body {
 
 /*Programação do titulo do formulario*/
 #tituloFormOrcamento{
-    margin-top: 2rem;
+    margin-top: 5px;
     font-family: 'RalewayBold';
+    font-size: 30px;
 }
 /*Fim da programação do titulo*/
 
 .Itens{
-    margin-left: 20px;
+    margin-left: 30px;
+    margin-top: -20px;
 }
 
 /*Programagão da div com o input e label*/
 .input-form{
     margin-top: 40px;
-    flex-direction: column;
-    width: 350px;
+    justify-content: center;
+
+    width: 300px;
     position: relative;
 }
 /*Fim da programação da div*/
@@ -732,14 +834,11 @@ body {
 }
 
 
-
-
-/*Fim da programação dos efeitos*/
-
 /*Programação da div com o input e label da descrição*/
 .input-form2{
-    width: 350px;
-    margin-top: 30px;
+    width: 320px;
+    margin-top: 5px;
+
 }
 /*Fim da programação da div*/
 
@@ -753,13 +852,12 @@ body {
 
 /*Programação do input de descrição*/
 #descricao {
-    margin-top: 5px;
     border-radius: 20px;
     resize: none;
     box-sizing: border-box;
     border: 2px solid #000;
-    width: 350px;
-    height: 121px;
+    width: 300px;
+    height: 120px;
     padding: 10px;
     line-height: 1.5; 
     overflow-wrap: break-word; /* Quebra linhas de texto longo */
@@ -777,7 +875,7 @@ body {
     background-color: #000000;
     border: solid 2px;
     border-radius: 60px;
-    margin-left: 4rem;
+    margin-left: 30px;
 }
 /*Fim da programação do botão*/
 /*FIM DA PROGRAMAÇÃO DA TELA DE ORÇAMENTO*/

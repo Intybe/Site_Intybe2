@@ -251,7 +251,7 @@ const translations = {
       c3:"Backend Developer",
       c4:"FrontEnd Developer",
       c5:"Mobile Developer",
-      tO:"Contact us!",
+      tO:"Contact us",
       tM:"Media",
       pM:"Talk to us and guarantee the solution you need.",
       pL:"Avenue Angélica, 525 – Bela Vista, São Paulo",

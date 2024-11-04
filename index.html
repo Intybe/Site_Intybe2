@@ -12,19 +12,22 @@
     <!--NAVBAR-->
         <header>
             <nav id="nav" class="navbar navbar-expand-lg navbar-light bg-white shadow-sm w-100 fixed-top">
-                <div class="container d-flex align-items-center justify-content-center">
-                    <img id="logo" src="img/logo.png" alt="Logo da empresa" class="ms-3">
-                
-                    <!-- Botão para alternar a visibilidade do menu em dispositivos móveis -->
+                <div class="container d-flex justify-content-between align-items-center">
+                    
+                    <!-- Logo centralizada -->
+                    <div class="navbar-brand mx-auto"> <!--ARRUMAR O ALINHAMENTO PARA NAO APARECER NO MENU HAMBURGUER-->
+                        <img id="logo" src="img/logo.png" alt="Logo da empresa">
+                    </div>
+            
+                    <!-- Botão para alternar a visibilidade do menu em dispositivos móveis (hamburguer) -->
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
                             aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
-                        <img src="img/Menu.png" alt="Menu">
+                        <img src="img/Menu.png" alt="Menu" style="width: 30px; height: 30px;">
                     </button>
-                    <!-- MENU HAMBUERGEUR) -->
+            
+                    <!-- Menu Hamburguer -->
                     <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                        <!-- Lista de links de navegação, centralizados -->
                         <ul class="navbar-nav mb-2 mb-lg-0 text-center">
-                            <!-- Cada item da lista representa uma seção do site -->
                             <li class="nav-item"><a class="nav-link" href="#home" data-key="home">Home</a></li>
                             <li class="nav-item"><a class="nav-link" href="#qmsomos" data-key="qmsomos">Quem Somos</a></li>
                             <li class="nav-item"><a class="nav-link" href="#tituloClientes" data-key="clientes">Clientes</a></li>
@@ -33,29 +36,25 @@
                             <li class="nav-item"><a class="nav-link" href="#orcamento" data-key="orcamento">Orçamento</a></li>
                         </ul>
                     </div>
-                    <!-- Switcher de idioma com opções de português e inglês -->
-                    <div id="language-switcher" class="dropdown mx-auto">
-                        <!-- Botão para exibir o dropdown de idiomas -->
+
+                    <!-- Switcher de idioma no canto esquerdo -->
+                    <div id="language-switcher" class="dropdown">
                         <button id="languageIcon" class="btn dropdown-toggle border-0" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Trocar idioma">
                             <img src="img/icon.png" alt="Idioma">
                         </button>
-                        <!-- Opções de idiomas no dropdown -->
                         <ul class="dropdown-menu" aria-labelledby="languageIcon">
                             <li><button class="dropdown-item" onclick="translatePage('pt')">Português</button></li>
                             <li><button class="dropdown-item" onclick="translatePage('en')">English</button></li>
                         </ul>
                     </div>
                 </div>
-            </nav>
+            </nav>            
         </header>
         
-<section class="Geral justify-content-center align-items-center">
-
-
-
+<section class="">
         <!-- HOME -->
            <!-- Seção Home com Flexbox e alinhamento centralizado -->
-    <section class="home d-flex justify-content-center  flex-lg-row py-2">
+    <section class="container home d-flex justify-content-center  flex-lg-row py-2">
         <!-- Div com os títulos e botões -->
         <div id="home" class="text-center text-lg-start ">
             <div class="FraseDeEfeito">
@@ -80,9 +79,9 @@
 
 
     <!-- QUEM SOMOS -->
-    <section class="quemSomos d-flex flex-column flex-lg-row align-items-center justify-content-center">
+    <section class="container quemSomos d-flex flex-column flex-lg-row align-items-center justify-content-center">
     <!-- div principal -->
-        <div id="qmsomos" class="row align-items-center">
+        <div id="qmsomos" class="row align-items-center mb-5">
             <!-- div Imagem principal quem somos -->
             <div id="ImagemQuemsomos" class="col-12 col-lg-6 text-center text-lg-start">
                 <img src="img/img2.png" alt="Imagem quem somos" id="imgQmSomos" class ="img-fluid">
@@ -126,9 +125,9 @@
 
     <!--CARDS DE CLIENTES-->
 
-    <section class="Cliente text-center my-2">
+    <section class="container Cliente text-center my-2">
             <h1 id="tituloClientes"  data-key="tituloClientes">Principais Clientes</h1>
-            <div class="CardBtn d-flex justify-content-center align-items-center"> 
+            <div class=" d-flex align-items-center"> 
             <!-- btn anterior-->
                     <button id="prevBtn" class="btn p-0 me-2">
                         <img src="img/prev.png" alt="Anterior">
@@ -137,7 +136,7 @@
                     <!-- carrosssel -->
 
                         <div class="clientes-carrossel-container position-relative overflow-hidden">
-                            <div class="clientes-carrossel  d-flex">
+                            <div class="clientes-carrossel  d-flex my-4">
     
                                 <!--CARDS -->
                                 <div class="cliente-card  p-2 bg-white  mx-2" id="card1">
@@ -350,11 +349,11 @@
     
     <!-- VANTAGENS -->
 
-    <section class="vantagens d-flex flex-column align-items-center justify-content-center my-5">
+    <section id="vantagens" class="container vantagens d-flex flex-column align-items-center justify-content-center my-5">
        
             <div class="row justify-content-center">
 
-                <div class="col-lg-3 mb-4">
+                <div class="col-lg-4 mb-4">
                     <div id="D1" class="p-4">
                         <h1 class="vantagens" data-key="vt1">Tecnologia <br> de Ponta</h1>
                         <p class="vantagens1" data-key="vs1">Soluções modernas e seguras que garantem a flexibilidade do projeto para futuras demandas.</p>
@@ -374,7 +373,7 @@
                         </div>
                 </div>
     
-                <div class="col-lg-3 mb-4">
+                <div class="col-lg-4 mb-4">
                     <div id="D4" class="p-4">
                         <h1 class="vantagens" data-key="vt4">Otimização <br> de Processos</h1>
                         <p class="vantagens1" data-key="vs4">Otimização SCRUM, garantindo a realização de cada etapa com qualidade e eficiência.</p>
@@ -393,8 +392,8 @@
         <button id="prevBtn2" class="me-3">
             <img src="img/prev.png" alt="Anterior">
         </button>
-        <div class="equipe-carrossel-container justify-content-center align-items-center ">
-            <div class="equipe-carrossel d-flex">
+        <div class="equipe-carrossel-container justify-content-center align-items-center">
+            <div class="equipe-carrossel d-flex my-4" >
                 <div class="equipe-card">
                     <img src="img/Evelyn.png" alt="foto" class="foto img-fluid"> 
                     <h3>Evelyn Gonçalves</h3>
@@ -502,21 +501,22 @@
 
 
     <!--ORÇAMENTO-->
-<section id="orcamento" class="justify-content-center align-items-center mb-lg-5">
-    <h1 id="tituloOrcamento" class="text-center" data-key="tO">Entre em contato!</h1>
+<section id="orcamento" class= "container justify-content-center align-items-center mb-4">
+    <h1 id="tituloOrcamento" class="text-center" data-key="tO">Entre em contato</h1>
     
     <!-- Container para centralizar o conteúdo -->
-    <div id="Corpo" class="container">
+    <div class="container">
         <div class="row justify-content-center align-items-center">
             
             <!-- Div de informações alinhada à esquerda -->
-            <div class="col-md-3 info">
+            <div class="col-7 info">
                 <h2 data-key="tM">Meios de Comunicação</h2>
                 <p data-key="pM">Fale conosco e garanta a solução que você precisa.</p>
 
                 <div class="item d-flex align-items-center mb-3">
                     <div class="icon-container">
-                        <a href='https://www.google.com/maps/place/Av.+Ang%C3%A9lica,+525+-+Vila+Angelica,+S%C3%A3o+Paulo+-+SP,+01227-000/@-23.5376361,-46.6569129,17z/data=!3m1!4b1!4m6!3m5!1s0x94ce59a785892ae7:0x76cb22a2e02047f9!8m2!3d-23.537641!4d-46.654338!16s%2Fg%2F11w3lc8h3j?entry=ttu&g_ep=EgoyMDI0MTAxNi4wIKXMDSoASAFQAw%3D%3D'><img src="img/Location.png" alt="Local Icon" class="icon"></a>
+                        <a href='https://www.google.com/maps/place/Av.+Ang%C3%A9lica,+525+-+Vila+Angelica,+S%C3%A3o+Paulo+-+SP,+01227-000/@-23.5376361,-46.6569129,17z/data=!3m1!4b1!4m6!3m5!1s0x94ce59a785892ae7:0x76cb22a2e02047f9!8m2!3d-23.537641!4d-46.654338!16s%2Fg%2F11w3lc8h3j?entry=ttu&g_ep=EgoyMDI0MTAxNi4wIKXMDSoASAFQAw%3D%3D'>
+                            <img src="img/Location.png" alt="Local Icon" class="icon"></a>
                     </div>
                     <div class="texto-container">
                         <h3>Local</h3>
@@ -568,7 +568,7 @@
 
                         <div class="form-group input-form">
                             <input type="text" id="email" class="input" name="email" required>
-                            <label for="assunto" data-key="l3">Endereço de Email</label>  
+                            <label for="Endereço de Email" data-key="l2">Endereço de Email</label>  
                         </div>
 
                         <div class="form-group input-form">
