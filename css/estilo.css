@@ -85,25 +85,25 @@ body {
 }
 
 #language-switcher {
-    display: flex; /* Exibe o ícone de troca de idioma em linha */
-    justify-content: center; /* Centraliza o ícone de troca de idioma */
-    margin-top: 0.5rem; /* Margem superior para espaçamento */
+    display: flex; 
+    justify-content: center; 
+    margin-top: 0.5rem; 
 }
 
 
 .navbar-brand, #navbarNav, #language-switcher {
-    text-align: center; /* Centraliza o conteúdo de cada seção na navbar */
+    text-align: center; 
 }
 
 /* Estilo para o dropdown de idiomas */
 #dropdown-content {
-    display: none; /* Oculto por padrão */
+    display: none; 
 }
 
 #dropdown-content.show {
-    display: block; /* Exibe o dropdown ao adicionar a classe 'show' */
+    display: block; 
     position: absolute;
-    top: 100%; /* Posiciona logo abaixo do botão */
+    top: 100%; 
     right: 0;
     min-width: 150px;
     background-color: white;
@@ -120,7 +120,7 @@ body {
         align-items: center;
     }
 
-    /* Estilo do logo centralizado */
+    
     .navbar-brand {
         position: absolute;
         left: 50%;
@@ -130,8 +130,8 @@ body {
 
     /* Espaço para o botão hamburguer à direita */
     .navbar-toggler {
-        border: none; /* Remove borda do botão hamburguer */
-        order: 3; /* Posiciona o botão no final da linha */
+        border: none; 
+        order: 3; 
     }
 
     /* Estilo do switcher de idioma à esquerda */
@@ -153,10 +153,9 @@ body {
 
 /*INICIO DA PROGRAMAÇÃO DA TELA HOME*/
 
-/* Estilo geral da seção Home */
 .home {
     margin-top: 100px;
-    font-family: 'RalewayBold', sans-serif; /* Fonte personalizada */
+    font-family: 'RalewayBold', sans-serif; 
 
     
 }
@@ -164,31 +163,31 @@ body {
   margin-top: 150px;
 }
 
-/* Estilo dos títulos */
+
 #home h1[data-key="home_title"] {
     font-size: 40px; 
-    color: #000000; /* Cor preta */
+    color: #000000; 
     margin-bottom: 0;
 }
 
 
-/* Estilo da palavra "Nossa" */
+
 #titulo1 h1 {
-    font-size: 40px; /* Tamanho da fonte */
-    color: #000000; /* Cor preta */
-    font-weight: bold; /* Negrito */
-    margin: 0; /* Remove margem */
+    font-size: 40px; 
+    color: #000000; 
+    font-weight: bold; 
+    margin: 0; 
 }
 
 
 
-/* Estilo da palavra "Solução" com o degradê */
+
 #solucao {
-    background: linear-gradient(to left, #6200EA, #A452FF); /* Degradê roxo */
-    -webkit-background-clip: text; /* Efeito de clip no texto */
+    background: linear-gradient(to left, #6200EA, #A452FF); 
+    -webkit-background-clip: text; 
     -webkit-text-fill-color: transparent; 
     font-weight: bold; 
-    margin-left: 5px; /* Pequeno espaçamento entre "Nossa" e "Solução" */
+    margin-left: 5px; 
 }
 
 
@@ -235,17 +234,17 @@ body {
     /* Estilo dos títulos */
     #home h1[data-key="home_title"] {
         font-size: 40px; 
-        color: #000000; /* Cor preta */
+        color: #000000; 
         margin-bottom: 0;
     }
     
     
     /* Estilo da palavra "Nossa" */
     #titulo1 h1 {
-        font-size: 40px; /* Tamanho da fonte */
-        color: #000000; /* Cor preta */
-        font-weight: bold; /* Negrito */
-        margin: 0; /* Remove margem */
+        font-size: 40px; 
+        color: #000000; 
+        font-weight: bold; 
+        margin: 0; 
     }
     
     
@@ -320,6 +319,7 @@ body {
 /*Programação dos paragrafos nomeados como class titulo2*/
 .textoQuemSomos{
     font-size: 18px;
+    justify-content: justify;
 }
 
 .texto2_2{
