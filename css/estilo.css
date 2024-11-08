@@ -122,16 +122,22 @@ body {
 
     /* Estilo do logo centralizado */
     .navbar-brand {
-        position: absolute;
         left: 50%;
         transform: translateX(-50%);
         z-index: 1;
+        position: relative;  
+        left: 0;
+        transform: none;     
+        z-index: 2;          
+        flex-grow: 1;        
+        text-align: center;  
+
     }
 
     /* Espaço para o botão hamburguer à direita */
     .navbar-toggler {
-        border: none; /* Remove borda do botão hamburguer */
-        order: 3; /* Posiciona o botão no final da linha */
+        border: none; 
+        order: 3; 
     }
 
     /* Estilo do switcher de idioma à esquerda */
