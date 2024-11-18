@@ -113,7 +113,6 @@
     z-index: 1;
 }
 
-/* Estilo para a navbar em dispositivos móveis */
 
 
 
@@ -949,29 +948,88 @@
         text-align: center;  
 
     }
-
+        /* Navbar Mobile */
+        #btn_menu{
+            width: 50px;
+            height: 50px;
+            background: transparent;
+            border-color: white;
+            cursor: pointer;
+            display: none;
+            z-index: 8;
+        }
+        .linha{
+            width: 35px;
+            height: 3px;
+            background-color: black;
+            display: block;
+            margin: 10px auto;
+            border-radius: 80px;
+            position: relative;
+            transform-origin: center;
+            transition: .2s;
+        }
+        #btn_menu.hamburguer .linha:nth-child(1) {
+            transform: translateY(13px) rotate(-45deg);
+        }
+        #btn_menu.hamburguer .linha:nth-child(2) {
+            width:0;
+        }
+        #btn_menu.hamburguer .linha:nth-child(3) {
+            transform: translateY(-13px) rotate(45deg);
+        }
+        
     /* Espaço para o botão hamburguer à direita */
-    .navbar-toggler {
+    .btn_menu {
         border: none; 
         order: 3; 
+        border-color: transparent;
+        cursor: pointer;
+        z-index: 8;
     }
-    .dropdown{
-        order:1;
-    }
+
     /* Estilo do switcher de idioma à esquerda */
     #language-switcher {
         order: 1;
     }
 
-    /* Fundo do menu hamburguer */
-    #navbarNav {
-        background-color: #fff;
-    }
 
     /* Espaçamento dos itens do menu hamburguer */
     .navbar-nav .nav-item {
         margin-bottom: 10px;
     }
+
+
+    .navbar-nav{
+        width: 100%;
+        height: 100vh;
+        backdrop-filter: blur(10px);
+        background-color: white;
+        position: absolute;
+        align-items: center;
+        padding-top: 20vh;
+        margin-top: 0;
+        margin-left: 0;
+        transition: 1s easy out;
+    }
+
+    .navbar-nav ul{
+        list-style: none;
+    }
+    .navbar-nav ul li{
+        text-align: center;
+    }
+    .navbar-nav ul li a{
+        font-size: 1.5rem;
+        text-decoration: none;
+        display:inline-flex;
+    }
+    .navbar-nav ul li a:hover{
+        font-size: 32px;
+        transition: .5s;
+    }
+
+
 
     /*RESPONSIVIDADE HOME*/
 

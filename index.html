@@ -29,13 +29,15 @@
                     </div>
             
                     <!-- Botão para alternar a visibilidade do menu em dispositivos móveis (hamburguer) -->
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                    <button class="btn_menu" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" onclick="animarMenu()"
                             aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
-                        <img src="img/Menu.png" alt="Menu" style="width: 30px; height: 30px;">
+                            <span class="linha"></span>
+                            <span class="linha"></span>
+                            <span class="linha"></span>
                     </button>
             
                     <!-- Menu Hamburguer -->
-                    <div class="collapse navbar-collapse justify-content-center order-2" id="navbarNav">
+                    <nav class="collapse navbar-collapse justify-content-center" id="navbarNav">
                         <ul class="navbar-nav mb-2 mb-lg-0 text-center">
                             <li class="nav-item"><a class="nav-link" href="#home" data-key="home">Home</a></li>
                             <li class="nav-item"><a class="nav-link" href="#qmsomos" data-key="qmsomos">Quem Somos</a></li>
@@ -44,7 +46,7 @@
                             <li class="nav-item"><a class="nav-link" href="#equipe" data-key="equipe">Equipe</a></li>
                             <li class="nav-item"><a class="nav-link" href="#orcamento" data-key="orcamento">Orçamento</a></li>
                         </ul>
-                    </div>
+                    </nav>
 
                     <!-- Switcher de idioma no canto esquerdo -->
                     <div id="language-switcher" class="dropdown d-none d-lg-block order-3">

@@ -1,3 +1,15 @@
+
+/* Animação hamburger */
+const menuDiv = document.getElementById('navbarNav')
+
+menuDiv.addEventListener('click', animarMenu)
+
+function animarMenu(){
+    const btn = document.getElementById('btn_menu')
+    btn.classList.toggle('hamburguer')
+    menuDiv.classList.toggle('abrir')
+}
+
 // CARROSSEL DA CLIENTES
 // Seleciona e define variáveis para os elementos do carrossel de clientes
 let currentIndexClientes = 0;
