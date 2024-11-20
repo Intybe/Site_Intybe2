@@ -13,7 +13,7 @@
 /*Declaração de fontes externas*/
 @font-face {
     font-family: 'AlbertSans';
-    src: url('./fontes/Albert_Sans/static/AlbertSans-Regular.ttf')format('truetype');
+    src: url('../fontes/Albert_Sans/static/AlbertSans-Regular.ttf')format('truetype');
 }
 
 @font-face {
