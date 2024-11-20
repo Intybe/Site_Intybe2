@@ -9,6 +9,7 @@ function animarMenu() {
   navbarNav.classList.toggle('ativo');
 }
 
+
 // CARROSSEL DA CLIENTES
 // Seleciona e define variáveis para os elementos do carrossel de clientes
 let currentIndexClientes = 0;
@@ -192,7 +193,7 @@ const translations = {
       vs4:"Otimização SCRUM, garantindo a realização de cada etapa com qualidade e eficiência.",
       tE:"Equipe Técnica",
       c1:"Analista de Dados",
-      c2:"Analista de Infraestrutura",
+      c2:"Analista de Sistemas",
       c3:"Desenvolvedor Backend",
       c4:"Desenvolvedor FrontEnd",
       c5:"Desenvolvedor Mobile",
@@ -256,7 +257,7 @@ const translations = {
       vs4:"SCRUM optimization, ensuring each step is carried out with quality and efficiency.",
       tE:"Technical Team",
       c1:"Data Analyst",
-      c2:"Infrastructure Analyst",
+      c2:"System Analyst",
       c3:"Backend Developer",
       c4:"FrontEnd Developer",
       c5:"Mobile Developer",

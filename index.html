@@ -71,9 +71,9 @@
 
         <!-- HOME -->
            <!-- Seção Home com Flexbox e alinhamento centralizado -->
-    <section class="container home d-flex justify-content-center align-items-center py-2">
+    <section id="home" class="container home d-flex justify-content-center align-items-center py-2 efeito-texto-home">
         <!-- Div com os títulos e botões -->
-        <div id="home" class="text-center text-lg-start mb-2">
+        <div id="home" class="text-center text-lg-start mb-2 ">
             <div class="FraseDeEfeito">
                 <h1 data-key="home_title">Suas Ideias.</h1>
                 <div id="titulo1" class="d-flex  justify-content-lg-start justify-content-center">
@@ -99,9 +99,9 @@
 
 
     <!-- QUEM SOMOS -->
-    <section class="container quemSomos d-flex flex-column flex-lg-row align-items-center justify-content-center">
+    <section id="qmsomos" class="container quemSomos d-flex flex-column flex-lg-row align-items-center justify-content-center">
     <!-- div principal -->
-        <div id="qmsomos" class="row align-items-center mb-5">
+        <div id="qmsomos" class="row align-items-center mb-5 efeito-texto-qmsomos">
             <!-- div Imagem principal quem somos -->
             <div id="ImagemQuemsomos" class="col-6">
                 <img src="img/img2.png" alt="Imagem quem somos" id="imgQmSomos" class ="img-fluid d-none d-lg-block">
@@ -147,7 +147,7 @@
 
     <!--CARDS DE CLIENTES-->
 
-    <section class="container Cliente text-center my-2">
+    <section id="tituloClientes" class="container Cliente text-center my-2 efeito-texto-clientes">
             <h1 id="tituloClientes"  data-key="tituloClientes">Principais Clientes</h1>
             <div class=" d-flex align-items-center"> 
             <!-- btn anterior-->
@@ -376,7 +376,7 @@
             <div class="row justify-content-center">
 
                 <div class="col-lg-4">
-                    <div id="D1" class="p-4">
+                    <div id="D1" class="p-4 efeito-quadro1">
                         <h1 class="vantagens" data-key="vt1">Tecnologia </br> de Ponta</h1>
                         <p class="vantagens1" data-key="vs1">Soluções modernas e seguras que garantem a flexibilidade do projeto para futuras demandas.</p>
                         <img src="img/img3.png" alt="Tecnologia de Ponta" id="img3" class="img-fluid">
@@ -384,19 +384,19 @@
                 </div>
     
                 <div class="col-lg-4 d-flex justify-content-between flex-column">
-                        <div id="D2" class="p-4">
+                        <div id="D2" class="p-4 efeito-quadro2">
                             <h1 class="vantagens" data-key="vt2">Atendimento <br> Qualificado</h1>
                             <p class="vantagens1" data-key="vs2">Atendimento de excelência, validando a opinião do cliente, com comunicação transparente e confiável.</p>
                         </div>
     
-                        <div id="D3" class="p-4">
+                        <div id="D3" class="p-4 efeito-quadro3">
                             <h1 class="vantagens" data-key="vt3">Suporte <br> Contínuo</h1>
                             <p class="vantagens1" data-key="vs3">Manutenção contínua, permitindo o funcionamento correto e a atualização caso necessário.</p>
                         </div>
                 </div>
     
                 <div class="col-lg-4">
-                    <div id="D4" class="p-4">
+                    <div id="D4" class="p-4 efeito-quadro4">
                         <h1 class="vantagens" data-key="vt4">Otimização <br> de Processos</h1>
                         <p class="vantagens1" data-key="vs4">Otimização SCRUM, garantindo a realização de cada etapa com qualidade e eficiência.</p>
                         <img src="img/img4.png" alt="Otimização de Processos" id="img4" class="img-fluid">
@@ -408,7 +408,7 @@
     
 <!-- EQUIPE-->
 
-<section id="equipe" class="container">
+<section id="equipe" class="container efeito-equipe">
     <h1 id="textoE" data-key="tE">Equipe Técnica</h1>
     <div class="d-flex align-items-center justify-content-center mb-5">
         <button id="prevBtn2" class="me-3">
@@ -446,7 +446,7 @@
                 <div class="equipe-card justify-content-center align-items-center">
                     <img src="img/Maria.png" alt="foto" class="foto img-fluid"> 
                     <h3 class="fw-bold">Maria Lima</h3>
-                    <p class="cargo" data-key="c4">Desenvolvedora Frontend</p>
+                    <p class="cargo" data-key="c4">Desenvolvedor Frontend</p>
                     <a href="https://www.linkedin.com/in/maria-clara-souza-de-lima-2674462a2/">
                         <button class="btnEquipe">LinkedIn</button>
                     </a>
@@ -474,7 +474,7 @@
                 <div class="equipe-card">
                     <img src="img/Flavia.png" alt="foto" class="foto img-fluid "> 
                     <h3>Flavia Morgado</h3>
-                    <p class="cargo" data-key="c2">Analista de Infraestrutura</p>
+                    <p class="cargo" data-key="c2">Analista de Sistemas</p>
                     <a href="https://www.linkedin.com/in/flavia-amaral-muniz-morgado-1651512a3/">
                         <button class="btnEquipe">LinkedIn</button>
                     </a>
@@ -523,7 +523,7 @@
 
 
     <!--ORÇAMENTO-->
-<section id="orcamento" class= "container justify-content-center align-items-center">
+<section id="orcamento" class= "container justify-content-center align-items-center efeito-contato">
     
     
     <!-- Container para centralizar o conteúdo -->
@@ -580,7 +580,7 @@
             </div>
 
             <!-- Div de formulário de orçamento alinhada ao centro -->
-            <div id="FormOrcamento" class="shadow bg-white">
+            <div id="FormOrcamento" class="shadow bg-white efeito-formulario">
                 <h2 id="tituloFormOrcamento" class="text-center" data-key="orcamento">Orçamento</h2>
                 <form>
                     <div class="Itens justify-content-center align-items-center">
@@ -648,8 +648,10 @@
                 </div>
             </div>
 
-
+        <script src="https://unpkg.com/scrollreveal"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
         <script src="script.js"></script>    
+        <script src="reveal.js"></script>    
 </body>
 </html>
+

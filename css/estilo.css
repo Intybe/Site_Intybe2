@@ -1,9 +1,10 @@
 /* Estilo.css */
 /*Programação da tela, deixando sem borda*/
 * {
+    scroll-padding-top: 150px; 
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Inclui padding e borda no tamanho total dos elementos */
+    box-sizing: border-box; 
 }
 
 
@@ -1272,4 +1273,8 @@
         font-size: 12px;
     }
 
+}
+
+.efeito-texto-home, .efeito-texto-qmsomos, .efeito-texto-clientes, .efeito-quadro1, .efeito-quadro2, .efeito-quadro3, .efeito-quadro4, .efeito-equipe, .efeito-contato, .efeito-formulario{
+    visibility: hidden;
 }
