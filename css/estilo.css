@@ -68,7 +68,7 @@
     visibility: hidden;
 }
 
-/* Cada item de navegação (ajustes específicos para alinhamento) */
+
 .navbar-nav .nav-item {
     margin-right: 20px; /* Espaçamento entre*/
 }
@@ -96,6 +96,8 @@
 .navbar-brand, #navbarNav, #language-switcher {
     text-align: center; 
 }
+
+
 
 /* Estilo para o dropdown de idiomas */
 #dropdown-content {
@@ -955,7 +957,7 @@
 
 @media (max-width: 990px) {
 
-
+    
     /* Centraliza o logo, coloca o menu hamburguer à direita e o idioma à esquerda */
     #nav .container {
         display: flex;
@@ -965,10 +967,12 @@
         max-width: 100%;
         margin: 0;
         padding: 0;
+
     }
 
     
     .navbar-brand {
+        order: 2;
         left: 50%;
         transform: translateX(-50%);
         z-index: 1;
@@ -980,44 +984,40 @@
         text-align: center;  
 
     }
-        /* Navbar Mobile */
+        /* menu hamburguer  */
         #btn_menu{
+            border: none; 
+            border-color: transparent;
             width: 50px;
             height: 50px;
             background: transparent;
-            border-color: white;
             cursor: pointer;
-            display: none;
+            z-index: 2000;
+            margin-right: 8px;
         }
         .linha{
-            width: 35px;
-            height: 2px;
+            width: 30px; 
+            height: 2px; 
             background-color: black;
             display: block;
-            margin: 10px auto;
-            border-radius: 80px;
+            margin: 8px auto;
             position: relative;
             transform-origin: center;
             transition: .2s;
         }
+       /* Animação do "X" no botão ativo */
         #btn_menu.hamburguer .linha:nth-child(1) {
-            transform: translateY(13px) rotate(-45deg);
+            transform: translateY(10px) rotate(-45deg); /* Ajuste na posição e rotação */
         }
+
         #btn_menu.hamburguer .linha:nth-child(2) {
-            width:0;
+            width: 0; /* Esconde a linha do meio */
         }
+
         #btn_menu.hamburguer .linha:nth-child(3) {
-            transform: translateY(-13px) rotate(45deg);
+            transform: translateY(-10px) rotate(45deg); /* Ajuste na posição e rotação */
         }
         
-    /* Espaço para o botão hamburguer à direita */
-    .btn_menu {
-        border: none; 
-        order: 3; 
-        border-color: transparent;
-        cursor: pointer;
-        z-index: 8;
-    }
 
     /* Estilo do switcher de idioma à esquerda */
     #language-switcher {
@@ -1025,39 +1025,75 @@
     }
 
 
-    /* Espaçamento dos itens do menu hamburguer */
-    .navbar-nav .nav-item {
+    .nav-item {
         margin-bottom: 10px;
+        text-align: center;
+        display: inline-block;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #nav-item{
+        margin-right: 0px;
+    }
+
+    .menu-hamburguer .nav-link {
+        font-size: 24px; 
+        color: black;
+        text-decoration: none;
+        display: inline-block;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 100%;
+        width: 100%;
     }
 
 
-    .navbar-nav{
+    ul.navbar-nav {
+        margin: 0;
+        display: flex;
         backdrop-filter: blur(50px);
         position: fixed;
-        align-items: center;
         padding-top: 20vh;
-        margin-top: 0;
-        margin-left: 0;
-        transition: 1s easy out;
-        z-index: 1000; 
-        display: flex;
-        flex-direction: column;
         top: 0;
         left: 0;
-        width: 100vw; 
-        height: 100vh; 
+        width: 100%;
+        height: 100%;
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+        z-index: 1000;
+        flex-direction: column; /* Mantém os itens em linha horizontal */
     }
+
+    .linha2{
+        width: 40px;
+        height: 2px;
+        background-color: black;
+        display: block;
+        margin: 10px auto;
+        border-radius: 80px;
+        position: relative;
+        transform-origin: center;
+        transition: .2s;
+        justify-content: center;
+        align-items: center;
+
+    }
+    
+    .navbar-nav.ativo {
+        visibility: visible;
+        opacity: 1;
+    }
+    
 
     .navbar-nav ul{
         list-style: none;
     }
-    .navbar-nav ul li{
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-    }
+
     .navbar-nav ul li a{
-        font-size: 1.5rem;
+        font-size: 100px;
         text-decoration: none;
         display:inline-flex;
         align-items: center;
@@ -1068,7 +1104,7 @@
         transition: .5s;
     }
 
-
+    
 
     /*RESPONSIVIDADE HOME*/
 

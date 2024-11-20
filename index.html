@@ -24,27 +24,33 @@
                         </ul>
                     </div>
                     <!-- Logo centralizada -->
-                    <div class="navbar-brand order-lg-1 order-2"> <!--ARRUMAR O ALINHAMENTO PARA NAO APARECER NO MENU HAMBURGUER-->
+                    <div class="navbar-brand order-lg-1"> <!--ARRUMAR O ALINHAMENTO PARA NAO APARECER NO MENU HAMBURGUER-->
                         <img id="logo" src="img/logo.png" alt="Logo da empresa">
                     </div>
             
                     <!-- Botão para alternar a visibilidade do menu em dispositivos móveis (hamburguer) -->
-                    <button class="btn_menu d-lg-none d-block " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" onclick="animarMenu()"
-                            aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
-                            <span class="linha"></span>
-                            <span class="linha"></span>
-                            <span class="linha"></span>
-                    </button>
-            
-                    <!-- Menu Hamburguer -->
-                    <div class="collapse navbar-collapse justify-content-center order-2" id="navbarNav">
-                        <ul class="navbar-nav mb-2 mb-lg-0 text-center">
-                            <li class="nav-item"><a class="nav-link" href="#home" data-key="home">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#qmsomos" data-key="qmsomos">Quem Somos</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#tituloClientes" data-key="clientes">Clientes</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#vantagens" data-key="vantagens">Vantagens</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#equipe" data-key="equipe">Equipe</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#orcamento" data-key="orcamento">Orçamento</a></li>
+                    <button id="btn_menu" class="btn_menu d-lg-none d-block order-3" onclick="animarMenu()">
+                        <span class="linha"></span>
+                        <span class="linha"></span>
+                        <span class="linha"></span>
+                      </button>
+                      
+
+                    
+                    <!-- Menu Hamburguer (conteúdo do menu) -->
+                    <div id="navbarNav" class="menu-hamburguer text-center justify-content-center order-2 d-flex">
+                        <ul class="navbar-nav mb-2 mb-lg-0 text-center align-items-center d-flex">
+                            <li id="nav-item" class="nav-item"><a class="nav-link" href="#home" data-key="home">Home</a></li>
+                            <span class="linha2"></span>
+                            <li id="nav-item" class="nav-item"><a class="nav-link" href="#qmsomos" data-key="qmsomos">Quem Somos</a></li>
+                            <span class="linha2"></span>
+                            <li id="nav-item" class="nav-item"><a class="nav-link" href="#tituloClientes" data-key="clientes">Clientes</a></li>
+                            <span class="linha2"></span>
+                            <li id="nav-item" class="nav-item"><a class="nav-link" href="#vantagens" data-key="vantagens">Vantagens</a></li>
+                            <span class="linha2"></span>
+                            <li id="nav-item" class="nav-item"><a class="nav-link" href="#equipe" data-key="equipe">Equipe</a></li>
+                            <span class="linha2"></span>
+                            <li id="nav-item" class="nav-item"><a class="nav-link" href="#orcamento" data-key="orcamento">Orçamento</a></li>
                         </ul>
                     </div>
 
@@ -155,7 +161,7 @@
                             <div class="clientes-carrossel  d-flex my-4">
     
                                 <!--CARDS -->
-                                <div class="cliente-card  p-2 bg-white  mx-2" id="card1">
+                                <div class="cliente-card  p-2 bg-white  mx-2" id="card1" >
                                     <div class="CabecalhoCard d-flex align-items-center mb-3">  
                                         <img src="img/logo1.png" alt="Logo 1" class="cliente-logo me-2">                             
                                         <div class="textoC text-start">  

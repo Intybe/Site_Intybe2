@@ -1,13 +1,12 @@
-
-/* Animação hamburger */
-const menuDiv = document.getElementById('navbarNav')
-
-menuDiv.addEventListener('click', animarMenu)
-
-function animarMenu(){
-    const btn = document.getElementById('btn_menu')
-    btn.classList.toggle('hamburguer')
-    menuDiv.classList.toggle('abrir')
+function animarMenu() {
+  const btnMenu = document.getElementById('btn_menu');
+  const navbarNav = document.querySelector('.navbar-nav');
+  
+  // Alterna classes para animação do botão
+  btnMenu.classList.toggle('hamburguer');
+  
+  // Alterna visibilidade do menu
+  navbarNav.classList.toggle('ativo');
 }
 
 // CARROSSEL DA CLIENTES
