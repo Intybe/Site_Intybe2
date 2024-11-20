@@ -13,27 +13,27 @@
 /*Declaração de fontes externas*/
 @font-face {
     font-family: 'AlbertSans';
-    src: url('/fontes/Albert_Sans/static/AlbertSans-Regular.ttf')format('truetype');
+    src: url('./fontes/Albert_Sans/static/AlbertSans-Regular.ttf')format('truetype');
 }
 
 @font-face {
     font-family: 'AlbertSansLight';
-    src: url('/fontes/Albert_Sans/static/AlbertSans-ExtraLight.ttf')format('truetype');
+    src: url('./fontes/Albert_Sans/static/AlbertSans-ExtraLight.ttf')format('truetype');
 }
 
 @font-face {
     font-family: 'AlbertSansBold';
-    src: url('/fontes/Albert_Sans/static/AlbertSans-Bold.ttf')format('truetype');
+    src: url('./fontes/Albert_Sans/static/AlbertSans-Bold.ttf')format('truetype');
 }
 
 @font-face {
     font-family: 'RalewayBold';
-    src: url('/fontes/Raleway/static/Raleway-Bold.ttf') format('truetype');
+    src: url('./fontes/Raleway/static/Raleway-Bold.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'RalewayExtraBold';
-    src: url('/fontes/Raleway/static/Raleway-ExtraBold.ttf') format('truetype');
+    src: url('./fontes/Raleway/static/Raleway-ExtraBold.ttf') format('truetype');
 }
 /*Fim da declaração de fontes*/
 #estilo_proprio{
@@ -512,7 +512,7 @@
 /* Estilo do subtítulo com os cargos */
 .cargo {
     color: #777;
-    font-size: 14px;
+    font-size: 13px;
     margin-top: 10px;
 }
 

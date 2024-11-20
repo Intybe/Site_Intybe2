@@ -67,8 +67,8 @@ carrosselClientes.style.transform = `translateX(0)`;
 // CARROSSEL DA EQUIPE
 let currentIndexEquipe = 0;
 const cardsEquipe = document.querySelectorAll('.equipe-card');
-const totalCardsEquipe = cardsClientes.length;
-const cardWidthEquipe = cardsClientes[0].offsetWidth;
+const totalCardsEquipe = cardsEquipe.length;
+const cardWidthEquipe = cardsEquipe[0].offsetWidth;
 const carrosselEquipe = document.querySelector('.equipe-carrossel');
 
 
